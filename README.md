@@ -35,6 +35,11 @@ We will install OpenStack with following architecture
 (create controller machine script)
 ##### Setting up persistent network and ssh authentication
 (networking script)
+##### Security
+|  |  |
+|--|--|
+|  |  |
+
 #### Install OpenStack - Stein Release
 ##### Install Identity Service (Keystone)
 (Keystone installation script)
@@ -48,7 +53,7 @@ We will install OpenStack with following architecture
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwNzgzNDQ3NSwyMzgwMzc4MDgsNjc1Nz
-U3NTM4LDUyOTMzODkwMywtMjgyOTc3NDQxLDE3NTg5NjEzMCwy
-MDI2NDQ2ODkxLDk0MDAyMDcwNCwtMzMyNDU1MzYzXX0=
+eyJoaXN0b3J5IjpbMzAzNzA0NTcwLDIzODAzNzgwOCw2NzU3NT
+c1MzgsNTI5MzM4OTAzLC0yODI5Nzc0NDEsMTc1ODk2MTMwLDIw
+MjY0NDY4OTEsOTQwMDIwNzA0LC0zMzI0NTUzNjNdfQ==
 -->
