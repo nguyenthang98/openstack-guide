@@ -30,9 +30,8 @@ We will install OpenStack with following architecture
 - install libvirt and qemu with yum: `yum install libvirt qemu-kvm`
 - get CentOS cloud image at: [CentOS 7](http://cloud.centos.org/centos/7/images/)
 ##### Create controller machine
-- creat
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5NjkyMjAxNiw2NzU3NTc1MzgsNTI5Mz
-M4OTAzLC0yODI5Nzc0NDEsMTc1ODk2MTMwLDIwMjY0NDY4OTEs
-OTQwMDIwNzA0LC0zMzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbMjM4MDM3ODA4LDY3NTc1NzUzOCw1MjkzMz
+g5MDMsLTI4Mjk3NzQ0MSwxNzU4OTYxMzAsMjAyNjQ0Njg5MSw5
+NDAwMjA3MDQsLTMzMjQ1NTM2M119
 -->
