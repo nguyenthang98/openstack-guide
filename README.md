@@ -40,30 +40,12 @@ We will install OpenStack with following architecture
 |--|--|
 |`ADMIN_PASS` | Password of user  `admin` |
 `CINDER_DBPASS` | Database password for the Block Storage service |
-`CINDER_PASS`
-
-Password of Block Storage service user  `cinder`
-
-`DASH_DBPASS`
-
-Database password for the Dashboard
-
-`DEMO_PASS`
-
-Password of user  `demo`
-
-`GLANCE_DBPASS`
-
-Database password for Image service
-
-`GLANCE_PASS`
-
-Password of Image service user  `glance`
-
-`KEYSTONE_DBPASS`
-
-Database password of Identity service
-
+`CINDER_PASS`|Password of Block Storage service user  `cinder`|
+|`DASH_DBPASS`|Database password for the Dashboard|
+|`DEMO_PASS`|Password of user  `demo`|
+|`GLANCE_DBPASS`|Database password for Image service|
+`GLANCE_PASS`|Password of Image service user  `glance`|
+`KEYSTONE_DBPASS`|Database password of Identity service|
 `METADATA_SECRET`
 
 Secret for the metadata proxy
@@ -105,7 +87,7 @@ Password of RabbitMQ user  `openstack`
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwOTE5OTI4MiwyMzgwMzc4MDgsNjc1Nz
+eyJoaXN0b3J5IjpbMTMwMTczNDgxNiwyMzgwMzc4MDgsNjc1Nz
 U3NTM4LDUyOTMzODkwMywtMjgyOTc3NDQxLDE3NTg5NjEzMCwy
 MDI2NDQ2ODkxLDk0MDAyMDcwNCwtMzMyNDU1MzYzXX0=
 -->
