@@ -33,9 +33,12 @@ We will install OpenStack with following architecture
 - get CentOS cloud image at: [CentOS 7](http://cloud.centos.org/centos/7/images/)
 ##### Create controller machine
 (create controller machine script)
-##### Setting up persistent network and ssh aut
+##### Setting up persistent network and ssh authentication
+(networking script)
+#### Install OpenStack - Stein Release
+##### Install Identity Service (Keystone)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3OTg0OTM1NSwyMzgwMzc4MDgsNjc1Nz
+eyJoaXN0b3J5IjpbLTkyOTY2ODQwMywyMzgwMzc4MDgsNjc1Nz
 U3NTM4LDUyOTMzODkwMywtMjgyOTc3NDQxLDE3NTg5NjEzMCwy
 MDI2NDQ2ODkxLDk0MDAyMDcwNCwtMzMyNDU1MzYzXX0=
 -->
