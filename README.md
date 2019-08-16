@@ -36,9 +36,11 @@ We will install OpenStack with following architecture
 ##### Setting up persistent network and ssh authentication
 (networking script)
 ##### Security
-|  |  |
+|ADMIN_PASS|  password of user admin|
 |--|--|
-|  |  |
+| CINDER_DBPASS | Database password for the Block Storage service |
+|--|--|
+| | |
 
 #### Install OpenStack - Stein Release
 ##### Install Identity Service (Keystone)
@@ -53,7 +55,7 @@ We will install OpenStack with following architecture
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAzNzA0NTcwLDIzODAzNzgwOCw2NzU3NT
+eyJoaXN0b3J5IjpbNjkzNDA3Njg5LDIzODAzNzgwOCw2NzU3NT
 c1MzgsNTI5MzM4OTAzLC0yODI5Nzc0NDEsMTc1ODk2MTMwLDIw
 MjY0NDY4OTEsOTQwMDIwNzA0LC0zMzI0NTUzNjNdfQ==
 -->
