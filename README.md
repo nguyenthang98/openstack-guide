@@ -3,10 +3,11 @@
 This document is based on official OpenStack installation and deployment guide.
 ## Install OpenStack
 #### System information
-
+OS: CentOS 7
+RAM: 
 #### Prerequisite
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyNjQ0Njg5MSw5NDAwMjA3MDQsLTMzMj
-Q1NTM2M119
+eyJoaXN0b3J5IjpbMTc1ODk2MTMwLDIwMjY0NDY4OTEsOTQwMD
+IwNzA0LC0zMzI0NTUzNjNdfQ==
 -->
