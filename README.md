@@ -51,9 +51,7 @@ We will install OpenStack with following architecture
 |`NOVA_DBPASS`|Database password for Compute service|
 |`NOVA_PASS`|Password of Compute service user  `nova`|
 |`PLACEMENT_PASS`|Password of the Placement service user  `placement`|
-|`RABBIT_PASS`
-
-Password of RabbitMQ user  `openstack`
+|`RABBIT_PASS`|Password of RabbitMQ user  `openstack`|
 
 #### Install OpenStack - Stein Release
 ##### Install Identity Service (Keystone)
@@ -68,7 +66,7 @@ Password of RabbitMQ user  `openstack`
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDIwNjY3MTQsMjM4MDM3ODA4LDY3NT
-c1NzUzOCw1MjkzMzg5MDMsLTI4Mjk3NzQ0MSwxNzU4OTYxMzAs
-MjAyNjQ0Njg5MSw5NDAwMjA3MDQsLTMzMjQ1NTM2M119
+eyJoaXN0b3J5IjpbMjEwNDQ3MjA0OCwyMzgwMzc4MDgsNjc1Nz
+U3NTM4LDUyOTMzODkwMywtMjgyOTc3NDQxLDE3NTg5NjEzMCwy
+MDI2NDQ2ODkxLDk0MDAyMDcwNCwtMzMyNDU1MzYzXX0=
 -->
