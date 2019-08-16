@@ -1,7 +1,8 @@
-# Openstack comprehensive tutorial
+# OpenStack comprehensive tutorial
 ## Abstract
-This document is based on official Openstack installation and deployment guide.
-## Install Oope
+This document is based on official OpenStack installation and deployment guide.
+## Install OpenStack
+#### I
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3OTMyODczMSwtMzMyNDU1MzYzXX0=
+eyJoaXN0b3J5IjpbLTQ1MTExNTU3MywtMzMyNDU1MzYzXX0=
 -->
