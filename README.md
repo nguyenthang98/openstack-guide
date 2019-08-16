@@ -22,9 +22,11 @@ We will install OpenStack with following architecture
 #### Prerequisite
  - The host machine already installed libvirt and bridge-utils
  - Basic understanding of virtual machine management with libvirt
- - Understanding linux bridge and
+ - Understanding linux bridge and how to use it
+ - Feel comfortable when using linux commands ;-)
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM4MzE5NjM3LDY3NTc1NzUzOCw1MjkzMz
-g5MDMsLTI4Mjk3NzQ0MSwxNzU4OTYxMzAsMjAyNjQ0Njg5MSw5
-NDAwMjA3MDQsLTMzMjQ1NTM2M119
+eyJoaXN0b3J5IjpbLTE1MjA3OTQ4MDQsNjc1NzU3NTM4LDUyOT
+MzODkwMywtMjgyOTc3NDQxLDE3NTg5NjEzMCwyMDI2NDQ2ODkx
+LDk0MDAyMDcwNCwtMzMyNDU1MzYzXX0=
 -->
