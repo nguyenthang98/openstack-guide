@@ -37,8 +37,18 @@ We will install OpenStack with following architecture
 (networking script)
 #### Install OpenStack - Stein Release
 ##### Install Identity Service (Keystone)
+(Keystone installation script)
+##### Install Image Service (Glance)
+(Installation script)
+##### Install Placement Service (Placement)
+(Installation script)
+##### Install Placement Service (Placement)
+(Installation script)
+##### Install Networking Service (Neutron)
+(Neutron installation script)
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyOTY2ODQwMywyMzgwMzc4MDgsNjc1Nz
+eyJoaXN0b3J5IjpbLTIxNzQ1NDYwNCwyMzgwMzc4MDgsNjc1Nz
 U3NTM4LDUyOTMzODkwMywtMjgyOTc3NDQxLDE3NTg5NjEzMCwy
 MDI2NDQ2ODkxLDk0MDAyMDcwNCwtMzMyNDU1MzYzXX0=
 -->
