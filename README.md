@@ -15,14 +15,14 @@ We will install minimal deployment for Stein release of OpenStack with these ser
  - Compute service (Nova)
  - Networking service (Neutron)
 
-We also install front-end dashboard to easier run new 
+We also install front-end dashboard(Horizon) to launch new instance easier
 
 We will install OpenStack with following architecture
 
 #### Prerequisite
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1MDIzMDk1Myw1MjkzMzg5MDMsLTI4Mj
-k3NzQ0MSwxNzU4OTYxMzAsMjAyNjQ0Njg5MSw5NDAwMjA3MDQs
-LTMzMjQ1NTM2M119
+eyJoaXN0b3J5IjpbNjc1NzU3NTM4LDUyOTMzODkwMywtMjgyOT
+c3NDQxLDE3NTg5NjEzMCwyMDI2NDQ2ODkxLDk0MDAyMDcwNCwt
+MzMyNDU1MzYzXX0=
 -->
