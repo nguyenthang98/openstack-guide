@@ -8,13 +8,17 @@ RAM: 12GiB
 CPUS: 8 core
 DISK: 16GiB
 #### Architecture
-We will install minimal deployment 
+We will install minimal deployment for Stein release of OpenStack with these services:
+
+ - Identity service (Keystone)
+ - 
+
 We will install OpenStack with following architecture
 
 #### Prerequisite
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjQ5NjUyMjIsNTI5MzM4OTAzLC0yOD
-I5Nzc0NDEsMTc1ODk2MTMwLDIwMjY0NDY4OTEsOTQwMDIwNzA0
-LC0zMzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbLTg4NzU4NjgzOSw1MjkzMzg5MDMsLTI4Mj
+k3NzQ0MSwxNzU4OTYxMzAsMjAyNjQ0Njg5MSw5NDAwMjA3MDQs
+LTMzMjQ1NTM2M119
 -->
