@@ -20,9 +20,9 @@ We also install front-end dashboard(Horizon) to launch new instance easier
 We will install OpenStack with following architecture
 
 #### Prerequisite
-
+ - The compute-vm:
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc1NzU3NTM4LDUyOTMzODkwMywtMjgyOT
-c3NDQxLDE3NTg5NjEzMCwyMDI2NDQ2ODkxLDk0MDAyMDcwNCwt
-MzMyNDU1MzYzXX0=
+eyJoaXN0b3J5IjpbNDg4MDAxMTExLDY3NTc1NzUzOCw1MjkzMz
+g5MDMsLTI4Mjk3NzQ0MSwxNzU4OTYxMzAsMjAyNjQ0Njg5MSw5
+NDAwMjA3MDQsLTMzMjQ1NTM2M119
 -->
