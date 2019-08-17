@@ -551,6 +551,15 @@ systemctl restart httpd
 # source the admin resource file
 . admin-rc
 
+# perform status check
+placement-status upgrade check
+
+# Run some command against placement API
+# install osc-placement
+pip install osc-placement
+# list available resource classes and traits
+openstack --os-placement-api-version 1.2 resource class list --sort-column name
+
 ```
 #### Install Compute Service (Nova)
 (Nova Installation script)
@@ -558,11 +567,11 @@ systemctl restart httpd
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDI4MzY0NzAsMjA3OTkyNzg5MSw0MD
-c0NTM4NTksMTI2NDcyNzI0MCwxMDE5NjQ0MDg2LC0xMzYwODY5
-NzgxLC0xMDgzNzI0NTA3LC0xMDA5ODgwNzE0LDI3ODQ1NjE0MS
-wtOTg0NDIwNDQ5LC0xMDYyMDMwODUzLDQ1NzQ2MDg3NSwtODkw
-NjkyNDA5LDE0ODg5NDEwMSw1NTY4MzU5NTIsLTk1MDE4MjA2Ny
-wyMzgwMzc4MDgsNjc1NzU3NTM4LDUyOTMzODkwMywtMjgyOTc3
-NDQxXX0=
+eyJoaXN0b3J5IjpbLTU3MDg5OTczNCwyMDc5OTI3ODkxLDQwNz
+Q1Mzg1OSwxMjY0NzI3MjQwLDEwMTk2NDQwODYsLTEzNjA4Njk3
+ODEsLTEwODM3MjQ1MDcsLTEwMDk4ODA3MTQsMjc4NDU2MTQxLC
+05ODQ0MjA0NDksLTEwNjIwMzA4NTMsNDU3NDYwODc1LC04OTA2
+OTI0MDksMTQ4ODk0MTAxLDU1NjgzNTk1MiwtOTUwMTgyMDY3LD
+IzODAzNzgwOCw2NzU3NTc1MzgsNTI5MzM4OTAzLC0yODI5Nzc0
+NDFdfQ==
 -->
