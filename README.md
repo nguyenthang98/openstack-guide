@@ -399,8 +399,11 @@ MariaDB [(none)]> GRANT ALL PRIVILEGES ON glance.* TO 'glance'@'%' \
 	| service_type | image                            |
 	| url          | http://controller:9292           |
 	+--------------+----------------------------------+
-
 	```
+##### Install and configure components
+- Install packages: `yum install openstack-glance`
+- Edit the **`/etc/glance/glance-api.conf`** file:
+	- 
 #### Install Placement Service (Placement)
 (Installation script)
 #### Install Compute Service (Nova)
@@ -409,11 +412,11 @@ MariaDB [(none)]> GRANT ALL PRIVILEGES ON glance.* TO 'glance'@'%' \
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODc1Njg5NTMsLTEzNjA4Njk3ODEsLT
-EwODM3MjQ1MDcsLTEwMDk4ODA3MTQsMjc4NDU2MTQxLC05ODQ0
-MjA0NDksLTEwNjIwMzA4NTMsNDU3NDYwODc1LC04OTA2OTI0MD
-ksMTQ4ODk0MTAxLDU1NjgzNTk1MiwtOTUwMTgyMDY3LDIzODAz
-NzgwOCw2NzU3NTc1MzgsNTI5MzM4OTAzLC0yODI5Nzc0NDEsMT
-c1ODk2MTMwLDIwMjY0NDY4OTEsOTQwMDIwNzA0LC0zMzI0NTUz
-NjNdfQ==
+eyJoaXN0b3J5IjpbLTY4NDk1OTcwNSwtMTM2MDg2OTc4MSwtMT
+A4MzcyNDUwNywtMTAwOTg4MDcxNCwyNzg0NTYxNDEsLTk4NDQy
+MDQ0OSwtMTA2MjAzMDg1Myw0NTc0NjA4NzUsLTg5MDY5MjQwOS
+wxNDg4OTQxMDEsNTU2ODM1OTUyLC05NTAxODIwNjcsMjM4MDM3
+ODA4LDY3NTc1NzUzOCw1MjkzMzg5MDMsLTI4Mjk3NzQ0MSwxNz
+U4OTYxMzAsMjAyNjQ0Njg5MSw5NDAwMjA3MDQsLTMzMjQ1NTM2
+M119
 -->
