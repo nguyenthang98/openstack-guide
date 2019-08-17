@@ -476,21 +476,30 @@ openstack image create "cirros" \
   
 # Confirm that image is loaded
 openstack image list
-  
 ```
 #### Install Placement Service (Placement)
-(Installation script)
+
+##### Create database
+```bash
+$ mysql -u root -p
+MariaDB [(none)]> CREATE DATABASE placement;
+MariaDB [(none)]> GRANT ALL PRIVILEGES ON placement.* TO 'placement'@'localhost' \
+ IDENTIFIED BY 'PLACEMENT_DBPASS';
+MariaDB [(none)]> GRANT ALL PRIVILEGES ON placement.* TO 'placement'@'%' \
+ IDENTIFIED BY 'PLACEMENT_DBPASS';
+```
+
 #### Install Compute Service (Nova)
 (Nova Installation script)
 #### Install Networking Service (Neutron)
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzNjI2ODY4Niw0MDc0NTM4NTksMTI2ND
-cyNzI0MCwxMDE5NjQ0MDg2LC0xMzYwODY5NzgxLC0xMDgzNzI0
-NTA3LC0xMDA5ODgwNzE0LDI3ODQ1NjE0MSwtOTg0NDIwNDQ5LC
-0xMDYyMDMwODUzLDQ1NzQ2MDg3NSwtODkwNjkyNDA5LDE0ODg5
-NDEwMSw1NTY4MzU5NTIsLTk1MDE4MjA2NywyMzgwMzc4MDgsNj
-c1NzU3NTM4LDUyOTMzODkwMywtMjgyOTc3NDQxLDE3NTg5NjEz
-MF19
+eyJoaXN0b3J5IjpbMzk2NzQzMzQ3LDQwNzQ1Mzg1OSwxMjY0Nz
+I3MjQwLDEwMTk2NDQwODYsLTEzNjA4Njk3ODEsLTEwODM3MjQ1
+MDcsLTEwMDk4ODA3MTQsMjc4NDU2MTQxLC05ODQ0MjA0NDksLT
+EwNjIwMzA4NTMsNDU3NDYwODc1LC04OTA2OTI0MDksMTQ4ODk0
+MTAxLDU1NjgzNTk1MiwtOTUwMTgyMDY3LDIzODAzNzgwOCw2Nz
+U3NTc1MzgsNTI5MzM4OTAzLC0yODI5Nzc0NDEsMTc1ODk2MTMw
+XX0=
 -->
