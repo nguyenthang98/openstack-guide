@@ -240,7 +240,14 @@ openstack role create myrole
 openstack role add --project myproject --user myuser myrole
 ```
 ##### Verify operations
+- Unset temporary some environment variables
+```bash
+unset OS_AUTH_URL OS_PASSWORD
+```
+- As the **`admin`** user, request an authentication token:
+```bash
 
+```
 
 #### Install Image Service (Glance)
 (Installation script)
@@ -252,7 +259,7 @@ openstack role add --project myproject --user myuser myrole
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzc3NDcyNDQsLTEwMDk4ODA3MTQsMj
+eyJoaXN0b3J5IjpbLTE2MTgxMzE2NDIsLTEwMDk4ODA3MTQsMj
 c4NDU2MTQxLC05ODQ0MjA0NDksLTEwNjIwMzA4NTMsNDU3NDYw
 ODc1LC04OTA2OTI0MDksMTQ4ODk0MTAxLDU1NjgzNTk1MiwtOT
 UwMTgyMDY3LDIzODAzNzgwOCw2NzU3NTc1MzgsNTI5MzM4OTAz
