@@ -239,6 +239,8 @@ openstack role create myrole
 # Add the `myrole` role to the `myproject` project and `myuser`user
 openstack role add --project myproject --user myuser myrole
 ```
+##### Verify operations
+
 
 #### Install Image Service (Glance)
 (Installation script)
@@ -250,10 +252,10 @@ openstack role add --project myproject --user myuser myrole
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDk4ODA3MTQsMjc4NDU2MTQxLC05OD
-Q0MjA0NDksLTEwNjIwMzA4NTMsNDU3NDYwODc1LC04OTA2OTI0
-MDksMTQ4ODk0MTAxLDU1NjgzNTk1MiwtOTUwMTgyMDY3LDIzOD
-AzNzgwOCw2NzU3NTc1MzgsNTI5MzM4OTAzLC0yODI5Nzc0NDEs
-MTc1ODk2MTMwLDIwMjY0NDY4OTEsOTQwMDIwNzA0LC0zMzI0NT
-UzNjNdfQ==
+eyJoaXN0b3J5IjpbLTExNzc3NDcyNDQsLTEwMDk4ODA3MTQsMj
+c4NDU2MTQxLC05ODQ0MjA0NDksLTEwNjIwMzA4NTMsNDU3NDYw
+ODc1LC04OTA2OTI0MDksMTQ4ODk0MTAxLDU1NjgzNTk1MiwtOT
+UwMTgyMDY3LDIzODAzNzgwOCw2NzU3NTc1MzgsNTI5MzM4OTAz
+LC0yODI5Nzc0NDEsMTc1ODk2MTMwLDIwMjY0NDY4OTEsOTQwMD
+IwNzA0LC0zMzI0NTUzNjNdfQ==
 -->
