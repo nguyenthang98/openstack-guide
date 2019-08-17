@@ -37,6 +37,7 @@ We will install OpenStack with following architecture
 (networking script)
 ##### Security
 You can chose any password you want. But i recommend you generate them using a tool such as [pwgen](https://sourceforge.net/projects/pwgen/)  or running the following command `openssl rand -hex 10` (*Note: Replace 10 by password length which comfort to you*);
+
 |Variable|Description|
 |--|--|
 |`ADMIN_PASS` | Password of user  `admin` |
@@ -53,6 +54,7 @@ You can chose any password you want. But i recommend you generate them using a t
 |`NOVA_PASS`|Password of Compute service user  `nova`|
 |`PLACEMENT_PASS`|Password of the Placement service user  `placement`|
 |`RABBIT_PASS`|Password of RabbitMQ user  `openstack`|
+
 
 (*Note: Keep the password table for your self and do not share it to other*)
 ##### Synchronize between services (NTP)
@@ -117,9 +119,9 @@ Add openstack user
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjIwMzA4NTMsNDU3NDYwODc1LC04OT
-A2OTI0MDksMTQ4ODk0MTAxLDU1NjgzNTk1MiwtOTUwMTgyMDY3
-LDIzODAzNzgwOCw2NzU3NTc1MzgsNTI5MzM4OTAzLC0yODI5Nz
-c0NDEsMTc1ODk2MTMwLDIwMjY0NDY4OTEsOTQwMDIwNzA0LC0z
-MzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbLTExMjk3NzE5NDUsLTEwNjIwMzA4NTMsND
+U3NDYwODc1LC04OTA2OTI0MDksMTQ4ODk0MTAxLDU1NjgzNTk1
+MiwtOTUwMTgyMDY3LDIzODAzNzgwOCw2NzU3NTc1MzgsNTI5Mz
+M4OTAzLC0yODI5Nzc0NDEsMTc1ODk2MTMwLDIwMjY0NDY4OTEs
+OTQwMDIwNzA0LC0zMzI0NTUzNjNdfQ==
 -->
