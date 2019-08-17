@@ -57,6 +57,10 @@ You can chose any password you want. But i recommend you generate them using a t
 (*Note: Keep the password table for your self and do not share it to other*)
 ##### Synchronize between services (NTP)
 As recommended by OpenStack Installation Guilde, we're going to install Chrony, an implementation of Network Time Protocol (NTP).
+
+ - On controller-vm:
+ - On compute
+
 #### Install OpenStack - Stein Release
 ##### Install Identity Service (Keystone)
 (Keystone installation script)
@@ -70,7 +74,7 @@ As recommended by OpenStack Installation Guilde, we're going to install Chrony, 
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1NDQyODM4MywyMzgwMzc4MDgsNjc1Nz
+eyJoaXN0b3J5IjpbLTYyNjI1MDYyOCwyMzgwMzc4MDgsNjc1Nz
 U3NTM4LDUyOTMzODkwMywtMjgyOTc3NDQxLDE3NTg5NjEzMCwy
 MDI2NDQ2ODkxLDk0MDAyMDcwNCwtMzMyNDU1MzYzXX0=
 -->
