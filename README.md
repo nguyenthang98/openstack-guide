@@ -54,6 +54,8 @@ You can chose any password you want. But i recommend you generate them using a t
 |`PLACEMENT_PASS`|Password of the Placement service user  `placement`|
 |`RABBIT_PASS`|Password of RabbitMQ user  `openstack`|
 
+(*Note: Keep the password gth*)
+
 #### Install OpenStack - Stein Release
 ##### Install Identity Service (Keystone)
 (Keystone installation script)
@@ -67,7 +69,7 @@ You can chose any password you want. But i recommend you generate them using a t
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE3MzQwMjM2LDIzODAzNzgwOCw2NzU3NT
-c1MzgsNTI5MzM4OTAzLC0yODI5Nzc0NDEsMTc1ODk2MTMwLDIw
-MjY0NDY4OTEsOTQwMDIwNzA0LC0zMzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbLTE3OTk3MzIxNzUsMjM4MDM3ODA4LDY3NT
+c1NzUzOCw1MjkzMzg5MDMsLTI4Mjk3NzQ0MSwxNzU4OTYxMzAs
+MjAyNjQ0Njg5MSw5NDAwMjA3MDQsLTMzMjQ1NTM2M119
 -->
