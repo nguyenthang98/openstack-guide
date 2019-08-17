@@ -93,6 +93,7 @@ max_connections = 4096
 collation-server = utf8_general_ci
 character-set-server = utf8
 ```
+- Enable mariadb on startup and start 
 #### Install OpenStack - Stein Release
 ##### Install Identity Service (Keystone)
 (Keystone installation script)
@@ -106,9 +107,8 @@ character-set-server = utf8
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTMyNzA1MTUsLTg5MDY5MjQwOSwxND
-g4OTQxMDEsNTU2ODM1OTUyLC05NTAxODIwNjcsMjM4MDM3ODA4
-LDY3NTc1NzUzOCw1MjkzMzg5MDMsLTI4Mjk3NzQ0MSwxNzU4OT
-YxMzAsMjAyNjQ0Njg5MSw5NDAwMjA3MDQsLTMzMjQ1NTM2M119
-
+eyJoaXN0b3J5IjpbMjc2ODk3NDgsLTg5MDY5MjQwOSwxNDg4OT
+QxMDEsNTU2ODM1OTUyLC05NTAxODIwNjcsMjM4MDM3ODA4LDY3
+NTc1NzUzOCw1MjkzMzg5MDMsLTI4Mjk3NzQ0MSwxNzU4OTYxMz
+AsMjAyNjQ0Njg5MSw5NDAwMjA3MDQsLTMzMjQ1NTM2M119
 -->
