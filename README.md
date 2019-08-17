@@ -144,10 +144,10 @@ restart service
 systemctl enable etcd
 systemctl start etcd
 ```
-
-#### Install OpenStack - Stein Release
+#### Install OpenStack services - Stein Release
 ##### Install Identity Service (Keystone)
-(Keystone installation script)
+###### Keyston
+
 ##### Install Image Service (Glance)
 (Installation script)
 ##### Install Placement Service (Placement)
@@ -158,9 +158,9 @@ systemctl start etcd
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5ODc0ODU3NSwtOTg0NDIwNDQ5LC0xMD
-YyMDMwODUzLDQ1NzQ2MDg3NSwtODkwNjkyNDA5LDE0ODg5NDEw
-MSw1NTY4MzU5NTIsLTk1MDE4MjA2NywyMzgwMzc4MDgsNjc1Nz
-U3NTM4LDUyOTMzODkwMywtMjgyOTc3NDQxLDE3NTg5NjEzMCwy
-MDI2NDQ2ODkxLDk0MDAyMDcwNCwtMzMyNDU1MzYzXX0=
+eyJoaXN0b3J5IjpbLTE2NDM2MDgzNDIsLTk4NDQyMDQ0OSwtMT
+A2MjAzMDg1Myw0NTc0NjA4NzUsLTg5MDY5MjQwOSwxNDg4OTQx
+MDEsNTU2ODM1OTUyLC05NTAxODIwNjcsMjM4MDM3ODA4LDY3NT
+c1NzUzOCw1MjkzMzg5MDMsLTI4Mjk3NzQ0MSwxNzU4OTYxMzAs
+MjAyNjQ0Njg5MSw5NDAwMjA3MDQsLTMzMjQ1NTM2M119
 -->
