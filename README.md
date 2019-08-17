@@ -3,10 +3,12 @@
 This document is based on official OpenStack installation and deployment guide.
 ## Install OpenStack
 ### System information
+```
 OS: CentOS 7
 RAM: 12GiB
 CPUS: 8 core
 DISK: 16GiB
+```
 ### Architecture
 We will install minimal deployment for Stein release of OpenStack with these services:
  - Identity service (Keystone)
@@ -587,11 +589,11 @@ systemctl restart httpd
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2MTcyMjk2LC03Mjk5NTE4NjcsMjA3OT
-kyNzg5MSw0MDc0NTM4NTksMTI2NDcyNzI0MCwxMDE5NjQ0MDg2
-LC0xMzYwODY5NzgxLC0xMDgzNzI0NTA3LC0xMDA5ODgwNzE0LD
-I3ODQ1NjE0MSwtOTg0NDIwNDQ5LC0xMDYyMDMwODUzLDQ1NzQ2
-MDg3NSwtODkwNjkyNDA5LDE0ODg5NDEwMSw1NTY4MzU5NTIsLT
-k1MDE4MjA2NywyMzgwMzc4MDgsNjc1NzU3NTM4LDUyOTMzODkw
-M119
+eyJoaXN0b3J5IjpbMTQzMjAwMDU3MiwtNzYxNzIyOTYsLTcyOT
+k1MTg2NywyMDc5OTI3ODkxLDQwNzQ1Mzg1OSwxMjY0NzI3MjQw
+LDEwMTk2NDQwODYsLTEzNjA4Njk3ODEsLTEwODM3MjQ1MDcsLT
+EwMDk4ODA3MTQsMjc4NDU2MTQxLC05ODQ0MjA0NDksLTEwNjIw
+MzA4NTMsNDU3NDYwODc1LC04OTA2OTI0MDksMTQ4ODk0MTAxLD
+U1NjgzNTk1MiwtOTUwMTgyMDY3LDIzODAzNzgwOCw2NzU3NTc1
+MzhdfQ==
 -->
