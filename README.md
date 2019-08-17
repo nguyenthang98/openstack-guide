@@ -561,14 +561,18 @@ pip install osc-placement
 openstack --os-placement-api-version 1.2 resource class list --sort-column name
 openstack --os-placement-api-version 1.6 trait list --sort-column name
 ```
-If you come up with some error while in 
+If you come up with an error while query resource with osc-placement like this:
+```bash
+Expecting value: line 1 column 1 (char 0)
+```  
+The solution is addin
 #### Install Compute Service (Nova)
 (Nova Installation script)
 #### Install Networking Service (Neutron)
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyMTc4MzQ3NiwtNzI5OTUxODY3LDIwNz
+eyJoaXN0b3J5IjpbLTk4MjA4NDMxMSwtNzI5OTUxODY3LDIwNz
 k5Mjc4OTEsNDA3NDUzODU5LDEyNjQ3MjcyNDAsMTAxOTY0NDA4
 NiwtMTM2MDg2OTc4MSwtMTA4MzcyNDUwNywtMTAwOTg4MDcxNC
 wyNzg0NTYxNDEsLTk4NDQyMDQ0OSwtMTA2MjAzMDg1Myw0NTc0
