@@ -468,7 +468,11 @@ systemctl start openstack-glance-api.service \
 # Note: Install wget if your machine not include it
 wget http://download.cirros-cloud.net/0.4.0/cirros-0.4.0-x86_64-disk.img
 
-
+# Upload image to the image service
+openstack image create "cirros" \
+  --file cirros-0.4.0-x86_64-disk.img \
+  --disk-format qcow2 --container-format bare \
+  --public
 ```
 #### Install Placement Service (Placement)
 (Installation script)
@@ -478,11 +482,11 @@ wget http://download.cirros-cloud.net/0.4.0/cirros-0.4.0-x86_64-disk.img
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNDgzMTI0OCwxMjY0NzI3MjQwLDEwMT
-k2NDQwODYsLTEzNjA4Njk3ODEsLTEwODM3MjQ1MDcsLTEwMDk4
-ODA3MTQsMjc4NDU2MTQxLC05ODQ0MjA0NDksLTEwNjIwMzA4NT
-MsNDU3NDYwODc1LC04OTA2OTI0MDksMTQ4ODk0MTAxLDU1Njgz
-NTk1MiwtOTUwMTgyMDY3LDIzODAzNzgwOCw2NzU3NTc1MzgsNT
-I5MzM4OTAzLC0yODI5Nzc0NDEsMTc1ODk2MTMwLDIwMjY0NDY4
-OTFdfQ==
+eyJoaXN0b3J5IjpbNDA3NDUzODU5LDEyNjQ3MjcyNDAsMTAxOT
+Y0NDA4NiwtMTM2MDg2OTc4MSwtMTA4MzcyNDUwNywtMTAwOTg4
+MDcxNCwyNzg0NTYxNDEsLTk4NDQyMDQ0OSwtMTA2MjAzMDg1My
+w0NTc0NjA4NzUsLTg5MDY5MjQwOSwxNDg4OTQxMDEsNTU2ODM1
+OTUyLC05NTAxODIwNjcsMjM4MDM3ODA4LDY3NTc1NzUzOCw1Mj
+kzMzg5MDMsLTI4Mjk3NzQ0MSwxNzU4OTYxMzAsMjAyNjQ0Njg5
+MV19
 -->
