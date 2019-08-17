@@ -98,7 +98,11 @@ character-set-server = utf8
 `systemctl start mariadb`
 - After mysql database running, use `mysql_secure_installation` to secure your database.
 ##### Install Message-queue
-
+`yum install rabbitmq-server`
+`systemctl enable rabbitmq-server.service`
+`systemctl start rabbitmq-server.service`
+Add openstack user
+`rabbitmqctl add_user openstack RABBIT_PASS`
 #### Install OpenStack - Stein Release
 ##### Install Identity Service (Keystone)
 (Keystone installation script)
@@ -112,7 +116,7 @@ character-set-server = utf8
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3NjE1MjQwOSw0NTc0NjA4NzUsLTg5MD
+eyJoaXN0b3J5IjpbMTQyMDE3NDMxNiw0NTc0NjA4NzUsLTg5MD
 Y5MjQwOSwxNDg4OTQxMDEsNTU2ODM1OTUyLC05NTAxODIwNjcs
 MjM4MDM3ODA4LDY3NTc1NzUzOCw1MjkzMzg5MDMsLTI4Mjk3Nz
 Q0MSwxNzU4OTYxMzAsMjAyNjQ0Njg5MSw5NDAwMjA3MDQsLTMz
