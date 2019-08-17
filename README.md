@@ -228,9 +228,16 @@ openstack project create --domain default \
 # create unprivileged project named myproject for regular tasks
 openstack project create --domain default \
   --description "Demo Project" myproject
-# create myuser user  
+  
+# create myuser user and enter password for this user
 openstack user create --domain default \
   --password-prompt myuser
+  
+# create new role named myrole
+openstack role create myrole
+
+# Add the `myrole` role to the `myproject` project and `myuser`user
+openstack role add --project myproject --user myuser myrole
 ```
 
 #### Install Image Service (Glance)
@@ -243,7 +250,7 @@ openstack user create --domain default \
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDM3MzgxMDEsMjc4NDU2MTQxLC05OD
+eyJoaXN0b3J5IjpbLTEwMDk4ODA3MTQsMjc4NDU2MTQxLC05OD
 Q0MjA0NDksLTEwNjIwMzA4NTMsNDU3NDYwODc1LC04OTA2OTI0
 MDksMTQ4ODk0MTAxLDU1NjgzNTk1MiwtOTUwMTgyMDY3LDIzOD
 AzNzgwOCw2NzU3NTc1MzgsNTI5MzM4OTAzLC0yODI5Nzc0NDEs
