@@ -66,7 +66,7 @@ As recommended by OpenStack Installation Guilde, we're going to install Chrony, 
 		 - to enable other nodes connect to chrony deamon add the following line to **chrony.conf** file:
 		 `allow 192.168.122.0/24`
 		 - restart the NTP service:
-		``
+		# `service chronyd restart`
  - On compute-vm:
 
 #### Install OpenStack - Stein Release
@@ -82,7 +82,7 @@ As recommended by OpenStack Installation Guilde, we're going to install Chrony, 
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MzUwOTcxOCwyMzgwMzc4MDgsNjc1Nz
+eyJoaXN0b3J5IjpbLTY0NTA4Mzc0MCwyMzgwMzc4MDgsNjc1Nz
 U3NTM4LDUyOTMzODkwMywtMjgyOTc3NDQxLDE3NTg5NjEzMCwy
 MDI2NDQ2ODkxLDk0MDAyMDcwNCwtMzMyNDU1MzYzXX0=
 -->
