@@ -467,6 +467,7 @@ systemctl start openstack-glance-api.service \
 # download the source image
 wget http://download.cirros-cloud.net/0.4.0/cirros-0.4.0-x86_64-disk.img
 
+
 ```
 #### Install Placement Service (Placement)
 (Installation script)
@@ -476,11 +477,11 @@ wget http://download.cirros-cloud.net/0.4.0/cirros-0.4.0-x86_64-disk.img
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxOTY0NDA4NiwtMTM2MDg2OTc4MSwtMT
-A4MzcyNDUwNywtMTAwOTg4MDcxNCwyNzg0NTYxNDEsLTk4NDQy
-MDQ0OSwtMTA2MjAzMDg1Myw0NTc0NjA4NzUsLTg5MDY5MjQwOS
-wxNDg4OTQxMDEsNTU2ODM1OTUyLC05NTAxODIwNjcsMjM4MDM3
-ODA4LDY3NTc1NzUzOCw1MjkzMzg5MDMsLTI4Mjk3NzQ0MSwxNz
-U4OTYxMzAsMjAyNjQ0Njg5MSw5NDAwMjA3MDQsLTMzMjQ1NTM2
-M119
+eyJoaXN0b3J5IjpbMTI2NDcyNzI0MCwxMDE5NjQ0MDg2LC0xMz
+YwODY5NzgxLC0xMDgzNzI0NTA3LC0xMDA5ODgwNzE0LDI3ODQ1
+NjE0MSwtOTg0NDIwNDQ5LC0xMDYyMDMwODUzLDQ1NzQ2MDg3NS
+wtODkwNjkyNDA5LDE0ODg5NDEwMSw1NTY4MzU5NTIsLTk1MDE4
+MjA2NywyMzgwMzc4MDgsNjc1NzU3NTM4LDUyOTMzODkwMywtMj
+gyOTc3NDQxLDE3NTg5NjEzMCwyMDI2NDQ2ODkxLDk0MDAyMDcw
+NF19
 -->
