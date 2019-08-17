@@ -55,8 +55,8 @@ You can chose any password you want. But i recommend you generate them using a t
 |`RABBIT_PASS`|Password of RabbitMQ user  `openstack`|
 
 (*Note: Keep the password table for your self and do not share it to other*)
-##### Synchronize between services
-As
+##### Synchronize between services (NTP)
+As recommended by OpenStack Installation Guilde, we're going to install Chrony, an implementation of Network Time Protocol (NTP).
 #### Install OpenStack - Stein Release
 ##### Install Identity Service (Keystone)
 (Keystone installation script)
@@ -70,7 +70,7 @@ As
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUwMTI4MDEsMjM4MDM3ODA4LDY3NTc1Nz
-UzOCw1MjkzMzg5MDMsLTI4Mjk3NzQ0MSwxNzU4OTYxMzAsMjAy
-NjQ0Njg5MSw5NDAwMjA3MDQsLTMzMjQ1NTM2M119
+eyJoaXN0b3J5IjpbLTQ1NDQyODM4MywyMzgwMzc4MDgsNjc1Nz
+U3NTM4LDUyOTMzODkwMywtMjgyOTc3NDQxLDE3NTg5NjEzMCwy
+MDI2NDQ2ODkxLDk0MDAyMDcwNCwtMzMyNDU1MzYzXX0=
 -->
