@@ -67,7 +67,11 @@ As recommended by OpenStack Installation Guilde, we're going to install Chrony, 
 		 `allow 192.168.122.0/24`
 		 - restart the NTP service:
 		# `service chronyd restart`
+		or
+		# `systemctl enable chronyd.service`
+		# `systemctl start chronyd.service`
  - On compute-vm:
+		-	
 
 #### Install OpenStack - Stein Release
 ##### Install Identity Service (Keystone)
@@ -82,7 +86,7 @@ As recommended by OpenStack Installation Guilde, we're going to install Chrony, 
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0NTA4Mzc0MCwyMzgwMzc4MDgsNjc1Nz
-U3NTM4LDUyOTMzODkwMywtMjgyOTc3NDQxLDE3NTg5NjEzMCwy
-MDI2NDQ2ODkxLDk0MDAyMDcwNCwtMzMyNDU1MzYzXX0=
+eyJoaXN0b3J5IjpbOTQ0MjE5MzE1LDIzODAzNzgwOCw2NzU3NT
+c1MzgsNTI5MzM4OTAzLC0yODI5Nzc0NDEsMTc1ODk2MTMwLDIw
+MjY0NDY4OTEsOTQwMDIwNzA0LC0zMzI0NTUzNjNdfQ==
 -->
