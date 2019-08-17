@@ -110,6 +110,9 @@ Add openstack user
 `yum install memcached python-memcached`
 Edit the **/etc/sysconfig/memcached** file:
 `OPTIONS="-l 127.0.0.1,::1,controller"` (*Note: change the existing line `OPTIONS="-l 127.0.0.1,::1"`*)
+Enable memcached on startup and start it:
+`systemctl enable memcached.service`
+`systemctl start memcached.service`
 #### Install OpenStack - Stein Release
 ##### Install Identity Service (Keystone)
 (Keystone installation script)
@@ -123,9 +126,9 @@ Edit the **/etc/sysconfig/memcached** file:
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM0NDkyMzYyLC0xMDYyMDMwODUzLDQ1Nz
-Q2MDg3NSwtODkwNjkyNDA5LDE0ODg5NDEwMSw1NTY4MzU5NTIs
-LTk1MDE4MjA2NywyMzgwMzc4MDgsNjc1NzU3NTM4LDUyOTMzOD
-kwMywtMjgyOTc3NDQxLDE3NTg5NjEzMCwyMDI2NDQ2ODkxLDk0
-MDAyMDcwNCwtMzMyNDU1MzYzXX0=
+eyJoaXN0b3J5IjpbLTIwNjE5NTA4ODksLTEwNjIwMzA4NTMsND
+U3NDYwODc1LC04OTA2OTI0MDksMTQ4ODk0MTAxLDU1NjgzNTk1
+MiwtOTUwMTgyMDY3LDIzODAzNzgwOCw2NzU3NTc1MzgsNTI5Mz
+M4OTAzLC0yODI5Nzc0NDEsMTc1ODk2MTMwLDIwMjY0NDY4OTEs
+OTQwMDIwNzA0LC0zMzI0NTUzNjNdfQ==
 -->
