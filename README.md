@@ -72,9 +72,11 @@ As recommended by OpenStack Installation Guilde, we're going to install Chrony, 
 		# `systemctl start chronyd.service`
  - On compute-vm:
 		-	install chrony same as controller node
-		-	edit the **chrony.conf** file as follow:
+		-	edit the **/etc/chrony.conf** file as follow:
 		`server controller iburst`
-		``
+		- restart the **chronyd** service
+ - Verify operation:
+	 - 
 
 #### Install OpenStack - Stein Release
 ##### Install Identity Service (Keystone)
@@ -89,7 +91,8 @@ As recommended by OpenStack Installation Guilde, we're going to install Chrony, 
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1MDE4MjA2NywyMzgwMzc4MDgsNjc1Nz
-U3NTM4LDUyOTMzODkwMywtMjgyOTc3NDQxLDE3NTg5NjEzMCwy
-MDI2NDQ2ODkxLDk0MDAyMDcwNCwtMzMyNDU1MzYzXX0=
+eyJoaXN0b3J5IjpbNTU2ODM1OTUyLC05NTAxODIwNjcsMjM4MD
+M3ODA4LDY3NTc1NzUzOCw1MjkzMzg5MDMsLTI4Mjk3NzQ0MSwx
+NzU4OTYxMzAsMjAyNjQ0Njg5MSw5NDAwMjA3MDQsLTMzMjQ1NT
+M2M119
 -->
