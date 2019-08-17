@@ -349,7 +349,25 @@ MariaDB [(none)]> GRANT ALL PRIVILEGES ON glance.* TO 'glance'@'%' \
 	| name        | glance                           |
 	| type        | image                            |
 	+-------------+----------------------------------+
-	  ```
+	```
+- Create API Endpoint:
+```bash
+openstack endpoint create --region RegionOne \
+>   image public http://controller:9292
++--------------+----------------------------------+
+| Field        | Value                            |
++--------------+----------------------------------+
+| enabled      | True                             |
+| id           | c9284204fcf74c03a523d46981b83b12 |
+| interface    | public                           |
+| region       | RegionOne                        |
+| region_id    | RegionOne                        |
+| service_id   | 84b936dd7c074f609d4ad64d60c1fa1c |
+| service_name | glance                           |
+| service_type | image                            |
+| url          | http://controller:9292           |
++--------------+----------------------------------+
+```
 #### Install Placement Service (Placement)
 (Installation script)
 #### Install Compute Service (Nova)
@@ -358,11 +376,11 @@ MariaDB [(none)]> GRANT ALL PRIVILEGES ON glance.* TO 'glance'@'%' \
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMzE5MDAwLC0xMzYwODY5NzgxLC0xMD
-gzNzI0NTA3LC0xMDA5ODgwNzE0LDI3ODQ1NjE0MSwtOTg0NDIw
-NDQ5LC0xMDYyMDMwODUzLDQ1NzQ2MDg3NSwtODkwNjkyNDA5LD
-E0ODg5NDEwMSw1NTY4MzU5NTIsLTk1MDE4MjA2NywyMzgwMzc4
-MDgsNjc1NzU3NTM4LDUyOTMzODkwMywtMjgyOTc3NDQxLDE3NT
-g5NjEzMCwyMDI2NDQ2ODkxLDk0MDAyMDcwNCwtMzMyNDU1MzYz
-XX0=
+eyJoaXN0b3J5IjpbMTY2MzI2NTQ2NiwtMTM2MDg2OTc4MSwtMT
+A4MzcyNDUwNywtMTAwOTg4MDcxNCwyNzg0NTYxNDEsLTk4NDQy
+MDQ0OSwtMTA2MjAzMDg1Myw0NTc0NjA4NzUsLTg5MDY5MjQwOS
+wxNDg4OTQxMDEsNTU2ODM1OTUyLC05NTAxODIwNjcsMjM4MDM3
+ODA4LDY3NTc1NzUzOCw1MjkzMzg5MDMsLTI4Mjk3NzQ0MSwxNz
+U4OTYxMzAsMjAyNjQ0Njg5MSw5NDAwMjA3MDQsLTMzMjQ1NTM2
+M119
 -->
