@@ -190,6 +190,9 @@ keystone-manage bootstrap --bootstrap-password ADMIN_PASS \
   --bootstrap-public-url http://controller:5000/v3/ \
   --bootstrap-region-id RegionOne
 ```
+(*Note: replace ADMIN_PASS with password you created before*)
+##### Configure the Apache HTTP server
+
 #### Install Image Service (Glance)
 (Installation script)
 #### Install Placement Service (Placement)
@@ -200,9 +203,9 @@ keystone-manage bootstrap --bootstrap-password ADMIN_PASS \
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk2NjU4Nzk5LC05ODQ0MjA0NDksLTEwNj
-IwMzA4NTMsNDU3NDYwODc1LC04OTA2OTI0MDksMTQ4ODk0MTAx
-LDU1NjgzNTk1MiwtOTUwMTgyMDY3LDIzODAzNzgwOCw2NzU3NT
-c1MzgsNTI5MzM4OTAzLC0yODI5Nzc0NDEsMTc1ODk2MTMwLDIw
-MjY0NDY4OTEsOTQwMDIwNzA0LC0zMzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbLTQ1OTc2MzIzOSwtOTg0NDIwNDQ5LC0xMD
+YyMDMwODUzLDQ1NzQ2MDg3NSwtODkwNjkyNDA5LDE0ODg5NDEw
+MSw1NTY4MzU5NTIsLTk1MDE4MjA2NywyMzgwMzc4MDgsNjc1Nz
+U3NTM4LDUyOTMzODkwMywtMjgyOTc3NDQxLDE3NTg5NjEzMCwy
+MDI2NDQ2ODkxLDk0MDAyMDcwNCwtMzMyNDU1MzYzXX0=
 -->
