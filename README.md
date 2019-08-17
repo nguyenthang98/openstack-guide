@@ -206,8 +206,14 @@ systemctl enable httpd.service
 systemctl start httpd.service
 ```
 Configure adminitrative account
-```
-
+```bash
+export OS_USERNAME=admin
+export OS_PASSWORD=ADMIN_PASS
+export OS_PROJECT_NAME=admin
+export OS_USER_DOMAIN_NAME=Default
+export OS_PROJECT_DOMAIN_NAME=Default
+export OS_AUTH_URL=http://controller:5000/v3
+export OS_IDENTITY_API_VERSION=3
 ```
 ##### Create a domain, projects, users, and roles
 
@@ -221,9 +227,10 @@ Configure adminitrative account
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc4NDU2MTQxLC05ODQ0MjA0NDksLTEwNj
-IwMzA4NTMsNDU3NDYwODc1LC04OTA2OTI0MDksMTQ4ODk0MTAx
-LDU1NjgzNTk1MiwtOTUwMTgyMDY3LDIzODAzNzgwOCw2NzU3NT
-c1MzgsNTI5MzM4OTAzLC0yODI5Nzc0NDEsMTc1ODk2MTMwLDIw
-MjY0NDY4OTEsOTQwMDIwNzA0LC0zMzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbLTEzNDEyNzQyODYsMjc4NDU2MTQxLC05OD
+Q0MjA0NDksLTEwNjIwMzA4NTMsNDU3NDYwODc1LC04OTA2OTI0
+MDksMTQ4ODk0MTAxLDU1NjgzNTk1MiwtOTUwMTgyMDY3LDIzOD
+AzNzgwOCw2NzU3NTc1MzgsNTI5MzM4OTAzLC0yODI5Nzc0NDEs
+MTc1ODk2MTMwLDIwMjY0NDY4OTEsOTQwMDIwNzA0LC0zMzI0NT
+UzNjNdfQ==
 -->
