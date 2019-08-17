@@ -313,7 +313,9 @@ MariaDB [(none)]> GRANT ALL PRIVILEGES ON glance.* TO 'glance'@'localhost' \
 MariaDB [(none)]> GRANT ALL PRIVILEGES ON glance.* TO 'glance'@'%' \
  IDENTIFIED BY 'GLANCE_DBPASS';
 ```
-
+(*Note: replace GLANCE_DBPASS with suitable password*)
+##### Create user and service
+- Source the admin resouce file: . admin-r
 
 #### Install Placement Service (Placement)
 (Installation script)
@@ -323,10 +325,11 @@ MariaDB [(none)]> GRANT ALL PRIVILEGES ON glance.* TO 'glance'@'%' \
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjA4Njk3ODEsLTEwODM3MjQ1MDcsLT
-EwMDk4ODA3MTQsMjc4NDU2MTQxLC05ODQ0MjA0NDksLTEwNjIw
-MzA4NTMsNDU3NDYwODc1LC04OTA2OTI0MDksMTQ4ODk0MTAxLD
-U1NjgzNTk1MiwtOTUwMTgyMDY3LDIzODAzNzgwOCw2NzU3NTc1
-MzgsNTI5MzM4OTAzLC0yODI5Nzc0NDEsMTc1ODk2MTMwLDIwMj
-Y0NDY4OTEsOTQwMDIwNzA0LC0zMzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbLTI2NDcyMjA0NiwtMTM2MDg2OTc4MSwtMT
+A4MzcyNDUwNywtMTAwOTg4MDcxNCwyNzg0NTYxNDEsLTk4NDQy
+MDQ0OSwtMTA2MjAzMDg1Myw0NTc0NjA4NzUsLTg5MDY5MjQwOS
+wxNDg4OTQxMDEsNTU2ODM1OTUyLC05NTAxODIwNjcsMjM4MDM3
+ODA4LDY3NTc1NzUzOCw1MjkzMzg5MDMsLTI4Mjk3NzQ0MSwxNz
+U4OTYxMzAsMjAyNjQ0Njg5MSw5NDAwMjA3MDQsLTMzMjQ1NTM2
+M119
 -->
