@@ -299,6 +299,7 @@ export OS_IDENTITY_API_VERSION=3
 export OS_IMAGE_API_VERSION=2
 ```
 (*Note: replace MYUSER_PASS with suitable password*)
+To use resource file: `. <filename>`
 
 #### Install Image Service (Glance)
 (Installation script)
@@ -310,7 +311,7 @@ export OS_IMAGE_API_VERSION=2
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzE2NTk2NDgsLTEwMDk4ODA3MTQsMj
+eyJoaXN0b3J5IjpbLTEwODM3MjQ1MDcsLTEwMDk4ODA3MTQsMj
 c4NDU2MTQxLC05ODQ0MjA0NDksLTEwNjIwMzA4NTMsNDU3NDYw
 ODc1LC04OTA2OTI0MDksMTQ4ODk0MTAxLDU1NjgzNTk1MiwtOT
 UwMTgyMDY3LDIzODAzNzgwOCw2NzU3NTc1MzgsNTI5MzM4OTAz
