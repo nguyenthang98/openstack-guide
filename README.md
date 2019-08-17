@@ -75,7 +75,10 @@ As recommended by OpenStack Installation Guilde, we're going to install Chrony, 
 		-	edit the **/etc/chrony.conf** file as follow:
 		`server controller iburst`
 		- restart the **chronyd** service
-##### Add OpenStack package repositories f
+##### Add OpenStack package repositories to yum
+- Subscribe repos:
+ `# subscription-manager repos --enable=rhel-7-server-optional-rpms 
+  --enable=rhel-7-server-extras-rpms --enable=rhel-7-server-rh-common-rpms`
 #### Install OpenStack - Stein Release
 ##### Install Identity Service (Keystone)
 (Keystone installation script)
@@ -89,8 +92,8 @@ As recommended by OpenStack Installation Guilde, we're going to install Chrony, 
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjQ3MDIwMTQsNTU2ODM1OTUyLC05NT
-AxODIwNjcsMjM4MDM3ODA4LDY3NTc1NzUzOCw1MjkzMzg5MDMs
-LTI4Mjk3NzQ0MSwxNzU4OTYxMzAsMjAyNjQ0Njg5MSw5NDAwMj
-A3MDQsLTMzMjQ1NTM2M119
+eyJoaXN0b3J5IjpbNTk2MTc4NTE1LDU1NjgzNTk1MiwtOTUwMT
+gyMDY3LDIzODAzNzgwOCw2NzU3NTc1MzgsNTI5MzM4OTAzLC0y
+ODI5Nzc0NDEsMTc1ODk2MTMwLDIwMjY0NDY4OTEsOTQwMDIwNz
+A0LC0zMzI0NTUzNjNdfQ==
 -->
