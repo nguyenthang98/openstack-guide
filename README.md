@@ -427,8 +427,28 @@ stores = file,http
 default_store = file
 filesystem_store_datadir = /var/lib/glance/images/
 ```
-- Edit the `/etc/glance/glance-registry.conf` **file
 (*Note: replace GLANCE_DBPASS and GLANCE_PASS with suitable password*)
+- Edit the **`/etc/glance/glance-registry.conf`** file:
+```ini
+[database]
+connection = mysql+pymysql://glance:GLANCE_DBPASS@controller/glance
+
+[keystone_authtoken]
+www_authenticate_uri = http://controller:5000
+auth_url = http://controller:5000
+memcached_servers = controller:11211
+auth_type = password
+project_domain_name = Default
+user_domain_name = Default
+project_name = service
+username = glance
+password = GLANCE_PASS
+
+[paste_deploy]
+flavor = keystone
+```
+(*Note: replace GLANCE_DBPASS and GLANCE_PASS with suitable password*)
+
 #### Install Placement Service (Placement)
 (Installation script)
 #### Install Compute Service (Nova)
@@ -437,11 +457,11 @@ filesystem_store_datadir = /var/lib/glance/images/
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIxMDEwMjUwLC0xMzYwODY5NzgxLC0xMD
-gzNzI0NTA3LC0xMDA5ODgwNzE0LDI3ODQ1NjE0MSwtOTg0NDIw
-NDQ5LC0xMDYyMDMwODUzLDQ1NzQ2MDg3NSwtODkwNjkyNDA5LD
-E0ODg5NDEwMSw1NTY4MzU5NTIsLTk1MDE4MjA2NywyMzgwMzc4
-MDgsNjc1NzU3NTM4LDUyOTMzODkwMywtMjgyOTc3NDQxLDE3NT
-g5NjEzMCwyMDI2NDQ2ODkxLDk0MDAyMDcwNCwtMzMyNDU1MzYz
-XX0=
+eyJoaXN0b3J5IjpbLTE1MjIyOTIxNDksLTEzNjA4Njk3ODEsLT
+EwODM3MjQ1MDcsLTEwMDk4ODA3MTQsMjc4NDU2MTQxLC05ODQ0
+MjA0NDksLTEwNjIwMzA4NTMsNDU3NDYwODc1LC04OTA2OTI0MD
+ksMTQ4ODk0MTAxLDU1NjgzNTk1MiwtOTUwMTgyMDY3LDIzODAz
+NzgwOCw2NzU3NTc1MzgsNTI5MzM4OTAzLC0yODI5Nzc0NDEsMT
+c1ODk2MTMwLDIwMjY0NDY4OTEsOTQwMDIwNzA0LC0zMzI0NTUz
+NjNdfQ==
 -->
