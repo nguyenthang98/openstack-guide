@@ -193,8 +193,16 @@ keystone-manage bootstrap --bootstrap-password ADMIN_PASS \
 (*Note: replace ADMIN_PASS with password you created before*)
 ##### Configure the Apache HTTP server
 - edit the **etc/httpd/conf/httpd.conf** file:
-```in
-ServerName controller
+	```ini
+	ServerName controller
+	```
+- create a link to the **/usr/share/keystone/wsgi-keystone.conf** file:
+	```bash
+	ln -s /usr/share/keystone/wsgi-keystone.conf /etc/httpd/conf.d/
+	```
+##### Finalize the Installation
+```bash
+
 ```
 #### Install Image Service (Glance)
 (Installation script)
@@ -206,7 +214,7 @@ ServerName controller
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwNjA0MTQxMywtOTg0NDIwNDQ5LC0xMD
+eyJoaXN0b3J5IjpbLTMxMDAxNTA4MCwtOTg0NDIwNDQ5LC0xMD
 YyMDMwODUzLDQ1NzQ2MDg3NSwtODkwNjkyNDA5LDE0ODg5NDEw
 MSw1NTY4MzU5NTIsLTk1MDE4MjA2NywyMzgwMzc4MDgsNjc1Nz
 U3NTM4LDUyOTMzODkwMywtMjgyOTc3NDQxLDE3NTg5NjEzMCwy
