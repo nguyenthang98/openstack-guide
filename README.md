@@ -459,6 +459,15 @@ systemctl enable openstack-glance-api.service \
 systemctl start openstack-glance-api.service \
   openstack-glance-registry.service
 ```
+##### Verify operation
+```bash
+# source the admin resource file
+. admin-rc
+
+# download the source image
+wget http://download.cirros-cloud.net/0.4.0/cirros-0.4.0-x86_64-disk.img
+
+```
 #### Install Placement Service (Placement)
 (Installation script)
 #### Install Compute Service (Nova)
@@ -467,7 +476,7 @@ systemctl start openstack-glance-api.service \
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1MTczMDAzNCwtMTM2MDg2OTc4MSwtMT
+eyJoaXN0b3J5IjpbMTAxOTY0NDA4NiwtMTM2MDg2OTc4MSwtMT
 A4MzcyNDUwNywtMTAwOTg4MDcxNCwyNzg0NTYxNDEsLTk4NDQy
 MDQ0OSwtMTA2MjAzMDg1Myw0NTc0NjA4NzUsLTg5MDY5MjQwOS
 wxNDg4OTQxMDEsNTU2ODM1OTUyLC05NTAxODIwNjcsMjM4MDM3
