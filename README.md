@@ -107,6 +107,8 @@ Add openstack user
 `rabbitmqctl add_user openstack RABBIT_PASS` (*Note: replace **RABBIT_PASS** with the suitable password on the password table you created before*)
 `rabbitmqctl set_permissions openstack ".*" ".*" ".*"`
 ##### Install Memcached
+`yum install memcached python-memcached`
+Edit the **/etc/sysconfig/memcached** file:
 
 #### Install OpenStack - Stein Release
 ##### Install Identity Service (Keystone)
@@ -121,7 +123,7 @@ Add openstack user
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODA0MDUxOTQsLTEwNjIwMzA4NTMsND
+eyJoaXN0b3J5IjpbLTE3ODA2NzU3MjMsLTEwNjIwMzA4NTMsND
 U3NDYwODc1LC04OTA2OTI0MDksMTQ4ODk0MTAxLDU1NjgzNTk1
 MiwtOTUwMTgyMDY3LDIzODAzNzgwOCw2NzU3NTc1MzgsNTI5Mz
 M4OTAzLC0yODI5Nzc0NDEsMTc1ODk2MTMwLDIwMjY0NDY4OTEs
