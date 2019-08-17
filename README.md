@@ -247,8 +247,8 @@ unset OS_AUTH_URL OS_PASSWORD
 - As the **`admin`** user, request an authentication token:
 ```bash
 openstack --os-auth-url http://controller:5000/v3 \
->   --os-project-domain-name Default --os-user-domain-name Default \
->   --os-project-name admin --os-username admin token issue
+   --os-project-domain-name Default --os-user-domain-name Default \
+   --os-project-name admin --os-username admin token issue
 Password: 
 +------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Field      | Value                                                                                                                                                                                   |
@@ -262,8 +262,8 @@ Password:
 - As the **`myuser`** user created in the previous section, request an authentication token
 ```bash
  openstack --os-auth-url http://controller:5000/v3 \
->   --os-project-domain-name Default --os-user-domain-name Default \
->   --os-project-name myproject --os-username myuser token issue
+   --os-project-domain-name Default --os-user-domain-name Default \
+   --os-project-name myproject --os-username myuser token issue
 Password: 
 +------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Field      | Value                                                                                                                                                                                   |
@@ -339,7 +339,7 @@ MariaDB [(none)]> GRANT ALL PRIVILEGES ON glance.* TO 'glance'@'%' \
 - Create the **`glance`** service entity:
 	```bash
 	openstack service create --name glance \
-	>   --description "OpenStack Image" image
+	   --description "OpenStack Image" image
 	+-------------+----------------------------------+
 	| Field       | Value                            |
 	+-------------+----------------------------------+
@@ -353,7 +353,7 @@ MariaDB [(none)]> GRANT ALL PRIVILEGES ON glance.* TO 'glance'@'%' \
 - Create API Endpoint:
 	```bash
 	openstack endpoint create --region RegionOne \
-	>   image public http://controller:9292
+	   image public http://controller:9292
 	+--------------+----------------------------------+
 	| Field        | Value                            |
 	+--------------+----------------------------------+
@@ -369,7 +369,7 @@ MariaDB [(none)]> GRANT ALL PRIVILEGES ON glance.* TO 'glance'@'%' \
 	+--------------+----------------------------------+
 
 	openstack endpoint create --region RegionOne \
-	>   image internal http://controller:9292
+	   image internal http://controller:9292
 	+--------------+----------------------------------+
 	| Field        | Value                            |
 	+--------------+----------------------------------+
@@ -385,7 +385,7 @@ MariaDB [(none)]> GRANT ALL PRIVILEGES ON glance.* TO 'glance'@'%' \
 	+--------------+----------------------------------+
 
 	openstack endpoint create --region RegionOne \
-	>   image admin http://controller:9292
+	   image admin http://controller:9292
 	+--------------+----------------------------------+
 	| Field        | Value                            |
 	+--------------+----------------------------------+
@@ -482,11 +482,11 @@ openstack image create "cirros" \
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA3NDUzODU5LDEyNjQ3MjcyNDAsMTAxOT
-Y0NDA4NiwtMTM2MDg2OTc4MSwtMTA4MzcyNDUwNywtMTAwOTg4
-MDcxNCwyNzg0NTYxNDEsLTk4NDQyMDQ0OSwtMTA2MjAzMDg1My
-w0NTc0NjA4NzUsLTg5MDY5MjQwOSwxNDg4OTQxMDEsNTU2ODM1
-OTUyLC05NTAxODIwNjcsMjM4MDM3ODA4LDY3NTc1NzUzOCw1Mj
-kzMzg5MDMsLTI4Mjk3NzQ0MSwxNzU4OTYxMzAsMjAyNjQ0Njg5
-MV19
+eyJoaXN0b3J5IjpbLTE0Nzc1NzE0MjUsNDA3NDUzODU5LDEyNj
+Q3MjcyNDAsMTAxOTY0NDA4NiwtMTM2MDg2OTc4MSwtMTA4Mzcy
+NDUwNywtMTAwOTg4MDcxNCwyNzg0NTYxNDEsLTk4NDQyMDQ0OS
+wtMTA2MjAzMDg1Myw0NTc0NjA4NzUsLTg5MDY5MjQwOSwxNDg4
+OTQxMDEsNTU2ODM1OTUyLC05NTAxODIwNjcsMjM4MDM3ODA4LD
+Y3NTc1NzUzOCw1MjkzMzg5MDMsLTI4Mjk3NzQ0MSwxNzU4OTYx
+MzBdfQ==
 -->
