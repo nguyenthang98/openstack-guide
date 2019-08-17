@@ -246,9 +246,35 @@ unset OS_AUTH_URL OS_PASSWORD
 ```
 - As the **`admin`** user, request an authentication token:
 ```bash
-
+openstack --os-auth-url http://controller:5000/v3 \
+>   --os-project-domain-name Default --os-user-domain-name Default \
+>   --os-project-name admin --os-username admin token issue
+Password: 
++------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Field      | Value                                                                                                                                                                                   |
++------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| expires    | 2019-08-17T15:10:23+0000                                                                                                                                                                |
+| id         | gAAAAABdWArPhNfbwEDyQ1U0VPvPEVaibyE4rF6a7f0sJ-cLezCyOSrFJCRjasIFo59nTD6SUIc_Q0OGPOESql8mfMFW-3DZuRGbo5t6pOBjESR_3A4Jvvny4qXSXMShoMwCLSjGPWSfslEJCbD-6mWsPoEeOFPKOiTDE4MWzqHDFbmv8qKnjyw |
+| project_id | 5dc95d1c667e44f299c1ac890c3ec989                                                                                                                                                        |
+| user_id    | bb1d9312525b4b79837b91c26fc3803e                                                                                                                                                        |
++------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
-
+- As the **`myuser`** user created in the previous section, request an authentication token
+```bash
+ openstack --os-auth-url http://controller:5000/v3 \
+>   --os-project-domain-name Default --os-user-domain-name Default \
+>   --os-project-name myproject --os-username myuser token issue
+Password: 
++------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Field      | Value                                                                                                                                                                                   |
++------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| expires    | 2019-08-17T15:11:56+0000                                                                                                                                                                |
+| id         | gAAAAABdWAss7-ReISh56nERdKSYw7783062_yURjlzT-WOVMgAP-g0GlY4NdOu0MumxplL2daWGj_d1ruFYcEiWogAbgjk3YCfvjqhDVvs56at_kaZGNH1y_6g4vI_iPxN5ZkRr78Lyk1b2MNJyC2vracQoh4m-2xs0ps85OOPs48-rYutPHY4 |
+| project_id | 49dccc8266e44c5b9a8583e5eab97577                                                                                                                                                        |
+| user_id    | 05394a5accc94362a519881d0f80cff4                                                                                                                                                        |
++------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+```
+##### Create evironment
 #### Install Image Service (Glance)
 (Installation script)
 #### Install Placement Service (Placement)
@@ -259,10 +285,10 @@ unset OS_AUTH_URL OS_PASSWORD
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTgxMzE2NDIsLTEwMDk4ODA3MTQsMj
-c4NDU2MTQxLC05ODQ0MjA0NDksLTEwNjIwMzA4NTMsNDU3NDYw
-ODc1LC04OTA2OTI0MDksMTQ4ODk0MTAxLDU1NjgzNTk1MiwtOT
-UwMTgyMDY3LDIzODAzNzgwOCw2NzU3NTc1MzgsNTI5MzM4OTAz
-LC0yODI5Nzc0NDEsMTc1ODk2MTMwLDIwMjY0NDY4OTEsOTQwMD
-IwNzA0LC0zMzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbMjU1MTY0MzExLC0xMDA5ODgwNzE0LDI3OD
+Q1NjE0MSwtOTg0NDIwNDQ5LC0xMDYyMDMwODUzLDQ1NzQ2MDg3
+NSwtODkwNjkyNDA5LDE0ODg5NDEwMSw1NTY4MzU5NTIsLTk1MD
+E4MjA2NywyMzgwMzc4MDgsNjc1NzU3NTM4LDUyOTMzODkwMywt
+MjgyOTc3NDQxLDE3NTg5NjEzMCwyMDI2NDQ2ODkxLDk0MDAyMD
+cwNCwtMzMyNDU1MzYzXX0=
 -->
