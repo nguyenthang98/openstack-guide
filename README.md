@@ -81,6 +81,8 @@ Enable OpenStack extra repository for Stein release:
 `yum upgrade`
 `yum install python-openstackclient`
 `yum install openstack-selinux`
+##### Install sql database for Controller node
+
 #### Install OpenStack - Stein Release
 ##### Install Identity Service (Keystone)
 (Keystone installation script)
@@ -94,8 +96,8 @@ Enable OpenStack extra repository for Stein release:
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4ODk0MTAxLDU1NjgzNTk1MiwtOTUwMT
-gyMDY3LDIzODAzNzgwOCw2NzU3NTc1MzgsNTI5MzM4OTAzLC0y
-ODI5Nzc0NDEsMTc1ODk2MTMwLDIwMjY0NDY4OTEsOTQwMDIwNz
-A0LC0zMzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbLTEwNjYwNTcwNjUsMTQ4ODk0MTAxLDU1Nj
+gzNTk1MiwtOTUwMTgyMDY3LDIzODAzNzgwOCw2NzU3NTc1Mzgs
+NTI5MzM4OTAzLC0yODI5Nzc0NDEsMTc1ODk2MTMwLDIwMjY0ND
+Y4OTEsOTQwMDIwNzA0LC0zMzI0NTUzNjNdfQ==
 -->
