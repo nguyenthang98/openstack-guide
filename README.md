@@ -102,7 +102,7 @@ character-set-server = utf8
 `systemctl enable rabbitmq-server.service`
 `systemctl start rabbitmq-server.service`
 Add openstack user
-`rabbitmqctl add_user openstack RABBIT_PASS`
+`rabbitmqctl add_user openstack RABBIT_PASS` (*Note: replace **RABBIT_PASS** with the suitable password on the password table you created before*)
 #### Install OpenStack - Stein Release
 ##### Install Identity Service (Keystone)
 (Keystone installation script)
@@ -116,7 +116,7 @@ Add openstack user
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMDE3NDMxNiw0NTc0NjA4NzUsLTg5MD
+eyJoaXN0b3J5IjpbMTM3NTg0NzE4Myw0NTc0NjA4NzUsLTg5MD
 Y5MjQwOSwxNDg4OTQxMDEsNTU2ODM1OTUyLC05NTAxODIwNjcs
 MjM4MDM3ODA4LDY3NTc1NzUzOCw1MjkzMzg5MDMsLTI4Mjk3Nz
 Q0MSwxNzU4OTYxMzAsMjAyNjQ0Njg5MSw5NDAwMjA3MDQsLTMz
