@@ -113,6 +113,9 @@ Edit the **/etc/sysconfig/memcached** file:
 Enable memcached on startup and start it:
 `systemctl enable memcached.service`
 `systemctl start memcached.service`
+##### Install Ectd (a distributed reliable key-value store)
+`yum install etcd`
+Edit the **/etc/etcd/etcd.conf**
 #### Install OpenStack - Stein Release
 ##### Install Identity Service (Keystone)
 (Keystone installation script)
@@ -126,9 +129,9 @@ Enable memcached on startup and start it:
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjE5NTA4ODksLTEwNjIwMzA4NTMsND
-U3NDYwODc1LC04OTA2OTI0MDksMTQ4ODk0MTAxLDU1NjgzNTk1
-MiwtOTUwMTgyMDY3LDIzODAzNzgwOCw2NzU3NTc1MzgsNTI5Mz
-M4OTAzLC0yODI5Nzc0NDEsMTc1ODk2MTMwLDIwMjY0NDY4OTEs
-OTQwMDIwNzA0LC0zMzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbMTE2NDczMjQxNCwtMTA2MjAzMDg1Myw0NT
+c0NjA4NzUsLTg5MDY5MjQwOSwxNDg4OTQxMDEsNTU2ODM1OTUy
+LC05NTAxODIwNjcsMjM4MDM3ODA4LDY3NTc1NzUzOCw1MjkzMz
+g5MDMsLTI4Mjk3NzQ0MSwxNzU4OTYxMzAsMjAyNjQ0Njg5MSw5
+NDAwMjA3MDQsLTMzMjQ1NTM2M119
 -->
