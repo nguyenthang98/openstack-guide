@@ -167,6 +167,8 @@ IDENTIFIED BY 'KEYSTONE_DBPASS';
 	[database]
 	connection=mysql+pymysql://keystone:KEYSTONE_DBPASS@controller/keystone
 	```
+	replace **KEYSTONE_DBPASS** by the password you created before
+	- in **[token]** section:
 #### Install Image Service (Glance)
 (Installation script)
 #### Install Placement Service (Placement)
@@ -177,9 +179,9 @@ IDENTIFIED BY 'KEYSTONE_DBPASS';
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDc4NzI0MDMsLTk4NDQyMDQ0OSwtMT
-A2MjAzMDg1Myw0NTc0NjA4NzUsLTg5MDY5MjQwOSwxNDg4OTQx
-MDEsNTU2ODM1OTUyLC05NTAxODIwNjcsMjM4MDM3ODA4LDY3NT
-c1NzUzOCw1MjkzMzg5MDMsLTI4Mjk3NzQ0MSwxNzU4OTYxMzAs
-MjAyNjQ0Njg5MSw5NDAwMjA3MDQsLTMzMjQ1NTM2M119
+eyJoaXN0b3J5IjpbNTQyMzQ3MDk0LC05ODQ0MjA0NDksLTEwNj
+IwMzA4NTMsNDU3NDYwODc1LC04OTA2OTI0MDksMTQ4ODk0MTAx
+LDU1NjgzNTk1MiwtOTUwMTgyMDY3LDIzODAzNzgwOCw2NzU3NT
+c1MzgsNTI5MzM4OTAzLC0yODI5Nzc0NDEsMTc1ODk2MTMwLDIw
+MjY0NDY4OTEsOTQwMDIwNzA0LC0zMzI0NTUzNjNdfQ==
 -->
