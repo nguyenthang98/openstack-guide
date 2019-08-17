@@ -384,6 +384,22 @@ MariaDB [(none)]> GRANT ALL PRIVILEGES ON glance.* TO 'glance'@'%' \
 	| url          | http://controller:9292           |
 	+--------------+----------------------------------+
 
+	openstack endpoint create --region RegionOne \
+	>   image admin http://controller:9292
+	+--------------+----------------------------------+
+	| Field        | Value                            |
+	+--------------+----------------------------------+
+	| enabled      | True                             |
+	| id           | ac0527c2a860442689d38d29dbe3f98c |
+	| interface    | admin                            |
+	| region       | RegionOne                        |
+	| region_id    | RegionOne                        |
+	| service_id   | 84b936dd7c074f609d4ad64d60c1fa1c |
+	| service_name | glance                           |
+	| service_type | image                            |
+	| url          | http://controller:9292           |
+	+--------------+----------------------------------+
+
 	```
 #### Install Placement Service (Placement)
 (Installation script)
@@ -393,7 +409,7 @@ MariaDB [(none)]> GRANT ALL PRIVILEGES ON glance.* TO 'glance'@'%' \
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjczMjQ4NDcsLTEzNjA4Njk3ODEsLT
+eyJoaXN0b3J5IjpbLTE3ODc1Njg5NTMsLTEzNjA4Njk3ODEsLT
 EwODM3MjQ1MDcsLTEwMDk4ODA3MTQsMjc4NDU2MTQxLC05ODQ0
 MjA0NDksLTEwNjIwMzA4NTMsNDU3NDYwODc1LC04OTA2OTI0MD
 ksMTQ4ODk0MTAxLDU1NjgzNTk1MiwtOTUwMTgyMDY3LDIzODAz
