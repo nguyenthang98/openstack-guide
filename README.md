@@ -100,9 +100,11 @@ character-set-server = utf8
 `systemctl start mariadb`
 - After mysql database running, use `mysql_secure_installation` to secure your database.
 ##### Install Message-queue
+```bash
 `yum install rabbitmq-server`
 `systemctl enable rabbitmq-server.service`
 `systemctl start rabbitmq-server.service`
+```
 Add openstack user
 `rabbitmqctl add_user openstack RABBIT_PASS` (*Note: replace **RABBIT_PASS** with the suitable password on the password table you created before*)
 `rabbitmqctl set_permissions openstack ".*" ".*" ".*"`
@@ -111,8 +113,10 @@ Add openstack user
 Edit the **/etc/sysconfig/memcached** file:
 `OPTIONS="-l 127.0.0.1,::1,controller"` (*Note: change the existing line `OPTIONS="-l 127.0.0.1,::1"`*)
 Enable memcached on startup and start it:
-`systemctl enable memcached.service`
-`systemctl start memcached.service`
+```bash
+systemctl enable memcached.service
+systemctl start memcached.service
+```
 ##### Install Ectd (a distributed reliable key-value store)
 `yum install etcd`
 Edit the **/etc/etcd/etcd.conf** file and set the `ETCD_INITIAL_CLUSTER`, `ETCD_INITIAL_ADVERTISE_PEER_URLS`, `ETCD_ADVERTISE_CLIENT_URLS`, `ETCD_LISTEN_CLIENT_URLS` to the management IP address of the controller node.
@@ -129,7 +133,11 @@ ETCD_INITIAL_CLUSTER="controller=http://192.168.122.102:2380"
 ETCD_INITIAL_CLUSTER_TOKEN="etcd-cluster-01"
 ETCD_INITIAL_CLUSTER_STATE="new"
 ```
-
+restart service
+```bash
+systemctl enable etcd
+systemctl start etcd
+```
 
 #### Install OpenStack - Stein Release
 ##### Install Identity Service (Keystone)
@@ -144,9 +152,9 @@ ETCD_INITIAL_CLUSTER_STATE="new"
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Nzc3OTUyNzcsLTk4NDQyMDQ0OSwtMT
-A2MjAzMDg1Myw0NTc0NjA4NzUsLTg5MDY5MjQwOSwxNDg4OTQx
-MDEsNTU2ODM1OTUyLC05NTAxODIwNjcsMjM4MDM3ODA4LDY3NT
-c1NzUzOCw1MjkzMzg5MDMsLTI4Mjk3NzQ0MSwxNzU4OTYxMzAs
-MjAyNjQ0Njg5MSw5NDAwMjA3MDQsLTMzMjQ1NTM2M119
+eyJoaXN0b3J5IjpbMTgyMTk1NjIwNiwtOTg0NDIwNDQ5LC0xMD
+YyMDMwODUzLDQ1NzQ2MDg3NSwtODkwNjkyNDA5LDE0ODg5NDEw
+MSw1NTY4MzU5NTIsLTk1MDE4MjA2NywyMzgwMzc4MDgsNjc1Nz
+U3NTM4LDUyOTMzODkwMywtMjgyOTc3NDQxLDE3NTg5NjEzMCwy
+MDI2NDQ2ODkxLDk0MDAyMDcwNCwtMzMyNDU1MzYzXX0=
 -->
