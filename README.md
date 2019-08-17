@@ -224,7 +224,12 @@ openstack domain create --description "An Example Domain" example
 openstack project create --domain default \
   --description "Service Project" service
 
-# 
+# create unprivileged project named myproject for regular tasks
+openstack project create --domain default \
+  --description "Demo Project" myproject
+# create myuser user  
+openstack user create --domain default \
+  --password-prompt myuser
 ```
 
 #### Install Image Service (Glance)
@@ -237,10 +242,10 @@ openstack project create --domain default \
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzIyMzYyMDk2LDI3ODQ1NjE0MSwtOTg0ND
-IwNDQ5LC0xMDYyMDMwODUzLDQ1NzQ2MDg3NSwtODkwNjkyNDA5
-LDE0ODg5NDEwMSw1NTY4MzU5NTIsLTk1MDE4MjA2NywyMzgwMz
-c4MDgsNjc1NzU3NTM4LDUyOTMzODkwMywtMjgyOTc3NDQxLDE3
-NTg5NjEzMCwyMDI2NDQ2ODkxLDk0MDAyMDcwNCwtMzMyNDU1Mz
-YzXX0=
+eyJoaXN0b3J5IjpbLTEzOTg3OTc0NzUsMjc4NDU2MTQxLC05OD
+Q0MjA0NDksLTEwNjIwMzA4NTMsNDU3NDYwODc1LC04OTA2OTI0
+MDksMTQ4ODk0MTAxLDU1NjgzNTk1MiwtOTUwMTgyMDY3LDIzOD
+AzNzgwOCw2NzU3NTc1MzgsNTI5MzM4OTAzLC0yODI5Nzc0NDEs
+MTc1ODk2MTMwLDIwMjY0NDY4OTEsOTQwMDIwNzA0LC0zMzI0NT
+UzNjNdfQ==
 -->
