@@ -503,7 +503,19 @@ openstack role add --project service --user placement admin
 # create placement API entry on service catalog
 openstack service create --name placement \
   --description "Placement API" placement
+  
+# Create API Endpoint
+openstack endpoint create --region RegionOne \
+  placement public http://controller:8778
+  
+openstack endpoint create --region RegionOne \
+  placement internal http://controller:8778
+  
+openstack endpoint create --region RegionOne \
+  placement admin http://controller:8778
 ```
+##### Install and Configure Components
+
 
 #### Install Compute Service (Nova)
 (Nova Installation script)
@@ -511,11 +523,11 @@ openstack service create --name placement \
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIxMTQ4NDE5LDIwNzk5Mjc4OTEsNDA3ND
-UzODU5LDEyNjQ3MjcyNDAsMTAxOTY0NDA4NiwtMTM2MDg2OTc4
-MSwtMTA4MzcyNDUwNywtMTAwOTg4MDcxNCwyNzg0NTYxNDEsLT
-k4NDQyMDQ0OSwtMTA2MjAzMDg1Myw0NTc0NjA4NzUsLTg5MDY5
-MjQwOSwxNDg4OTQxMDEsNTU2ODM1OTUyLC05NTAxODIwNjcsMj
-M4MDM3ODA4LDY3NTc1NzUzOCw1MjkzMzg5MDMsLTI4Mjk3NzQ0
-MV19
+eyJoaXN0b3J5IjpbMTk1ODMyNzUzMSwyMDc5OTI3ODkxLDQwNz
+Q1Mzg1OSwxMjY0NzI3MjQwLDEwMTk2NDQwODYsLTEzNjA4Njk3
+ODEsLTEwODM3MjQ1MDcsLTEwMDk4ODA3MTQsMjc4NDU2MTQxLC
+05ODQ0MjA0NDksLTEwNjIwMzA4NTMsNDU3NDYwODc1LC04OTA2
+OTI0MDksMTQ4ODk0MTAxLDU1NjgzNTk1MiwtOTUwMTgyMDY3LD
+IzODAzNzgwOCw2NzU3NTc1MzgsNTI5MzM4OTAzLC0yODI5Nzc0
+NDFdfQ==
 -->
