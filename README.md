@@ -546,13 +546,19 @@ openstack endpoint create --region RegionOne \
 ```bash
 systemctl restart httpd
 ```
+##### Verify Installation
+```bash
+# source the admin resource file
+. admin-rc
+
+```
 #### Install Compute Service (Nova)
 (Nova Installation script)
 #### Install Networking Service (Neutron)
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTA1OTgwMTUsMjA3OTkyNzg5MSw0MD
+eyJoaXN0b3J5IjpbLTEzNDI4MzY0NzAsMjA3OTkyNzg5MSw0MD
 c0NTM4NTksMTI2NDcyNzI0MCwxMDE5NjQ0MDg2LC0xMzYwODY5
 NzgxLC0xMDgzNzI0NTA3LC0xMDA5ODgwNzE0LDI3ODQ1NjE0MS
 wtOTg0NDIwNDQ5LC0xMDYyMDMwODUzLDQ1NzQ2MDg3NSwtODkw
