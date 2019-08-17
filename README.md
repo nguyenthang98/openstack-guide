@@ -351,23 +351,40 @@ MariaDB [(none)]> GRANT ALL PRIVILEGES ON glance.* TO 'glance'@'%' \
 	+-------------+----------------------------------+
 	```
 - Create API Endpoint:
-```bash
-openstack endpoint create --region RegionOne \
->   image public http://controller:9292
-+--------------+----------------------------------+
-| Field        | Value                            |
-+--------------+----------------------------------+
-| enabled      | True                             |
-| id           | c9284204fcf74c03a523d46981b83b12 |
-| interface    | public                           |
-| region       | RegionOne                        |
-| region_id    | RegionOne                        |
-| service_id   | 84b936dd7c074f609d4ad64d60c1fa1c |
-| service_name | glance                           |
-| service_type | image                            |
-| url          | http://controller:9292           |
-+--------------+----------------------------------+
-```
+	```bash
+	openstack endpoint create --region RegionOne \
+	>   image public http://controller:9292
+	+--------------+----------------------------------+
+	| Field        | Value                            |
+	+--------------+----------------------------------+
+	| enabled      | True                             |
+	| id           | c9284204fcf74c03a523d46981b83b12 |
+	| interface    | public                           |
+	| region       | RegionOne                        |
+	| region_id    | RegionOne                        |
+	| service_id   | 84b936dd7c074f609d4ad64d60c1fa1c |
+	| service_name | glance                           |
+	| service_type | image                            |
+	| url          | http://controller:9292           |
+	+--------------+----------------------------------+
+
+	openstack endpoint create --region RegionOne \
+	>   image internal http://controller:9292
+	+--------------+----------------------------------+
+	| Field        | Value                            |
+	+--------------+----------------------------------+
+	| enabled      | True                             |
+	| id           | 53e90b3b8b324043bb0d27ec67baeee1 |
+	| interface    | internal                         |
+	| region       | RegionOne                        |
+	| region_id    | RegionOne                        |
+	| service_id   | 84b936dd7c074f609d4ad64d60c1fa1c |
+	| service_name | glance                           |
+	| service_type | image                            |
+	| url          | http://controller:9292           |
+	+--------------+----------------------------------+
+
+	```
 #### Install Placement Service (Placement)
 (Installation script)
 #### Install Compute Service (Nova)
@@ -376,11 +393,11 @@ openstack endpoint create --region RegionOne \
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2MzI2NTQ2NiwtMTM2MDg2OTc4MSwtMT
-A4MzcyNDUwNywtMTAwOTg4MDcxNCwyNzg0NTYxNDEsLTk4NDQy
-MDQ0OSwtMTA2MjAzMDg1Myw0NTc0NjA4NzUsLTg5MDY5MjQwOS
-wxNDg4OTQxMDEsNTU2ODM1OTUyLC05NTAxODIwNjcsMjM4MDM3
-ODA4LDY3NTc1NzUzOCw1MjkzMzg5MDMsLTI4Mjk3NzQ0MSwxNz
-U4OTYxMzAsMjAyNjQ0Njg5MSw5NDAwMjA3MDQsLTMzMjQ1NTM2
-M119
+eyJoaXN0b3J5IjpbLTE0MjczMjQ4NDcsLTEzNjA4Njk3ODEsLT
+EwODM3MjQ1MDcsLTEwMDk4ODA3MTQsMjc4NDU2MTQxLC05ODQ0
+MjA0NDksLTEwNjIwMzA4NTMsNDU3NDYwODc1LC04OTA2OTI0MD
+ksMTQ4ODk0MTAxLDU1NjgzNTk1MiwtOTUwMTgyMDY3LDIzODAz
+NzgwOCw2NzU3NTc1MzgsNTI5MzM4OTAzLC0yODI5Nzc0NDEsMT
+c1ODk2MTMwLDIwMjY0NDY4OTEsOTQwMDIwNzA0LC0zMzI0NTUz
+NjNdfQ==
 -->
