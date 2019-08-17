@@ -43,7 +43,7 @@ We will install OpenStack with following architecture
 |`DASH_DBPASS`|Database password for the Dashboard|
 |`DEMO_PASS`|Password of user  `demo`|
 |`GLANCE_DBPASS`|Database password for Image service|
-`GLANCE_PASS`|Password of Image service user  `glance`|
+|`GLANCE_PASS`|Password of Image service user  `glance`|
 |`KEYSTONE_DBPASS`|Database password of Identity service|
 |`METADATA_SECRET`|Secret for the metadata proxy|
 |`NEUTRON_DBPASS`|Database password for the Networking service |
@@ -66,7 +66,7 @@ We will install OpenStack with following architecture
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwNDQ3MjA0OCwyMzgwMzc4MDgsNjc1Nz
+eyJoaXN0b3J5IjpbLTc4MTA4MDU5NCwyMzgwMzc4MDgsNjc1Nz
 U3NTM4LDUyOTMzODkwMywtMjgyOTc3NDQxLDE3NTg5NjEzMCwy
 MDI2NDQ2ODkxLDk0MDAyMDcwNCwtMzMyNDU1MzYzXX0=
 -->
