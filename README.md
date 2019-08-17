@@ -82,7 +82,18 @@ Enable OpenStack extra repository for Stein release:
 `yum install python-openstackclient`
 `yum install openstack-selinux`
 ##### Install sql database for Controller node
-`yum install mariadb mariadb-server python2-PyMySQL`
+- `yum install mariadb mariadb-server python2-PyMySQL`
+- Create and edit **/etc/my.cnf.d/openstack.cnf**:
+```
+[mysqld]
+bind-address = 10.0.0.11
+
+default-storage-engine = innodb
+innodb_file_per_table = on
+max_connections = 4096
+collation-server = utf8_general_ci
+character-set-server = utf8
+```
 #### Install OpenStack - Stein Release
 ##### Install Identity Service (Keystone)
 (Keystone installation script)
@@ -96,8 +107,8 @@ Enable OpenStack extra repository for Stein release:
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzQ5OTc1NDMsMTQ4ODk0MTAxLDU1Nj
-gzNTk1MiwtOTUwMTgyMDY3LDIzODAzNzgwOCw2NzU3NTc1Mzgs
-NTI5MzM4OTAzLC0yODI5Nzc0NDEsMTc1ODk2MTMwLDIwMjY0ND
-Y4OTEsOTQwMDIwNzA0LC0zMzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbLTg5MDY5MjQwOSwxNDg4OTQxMDEsNTU2OD
+M1OTUyLC05NTAxODIwNjcsMjM4MDM3ODA4LDY3NTc1NzUzOCw1
+MjkzMzg5MDMsLTI4Mjk3NzQ0MSwxNzU4OTYxMzAsMjAyNjQ0Nj
+g5MSw5NDAwMjA3MDQsLTMzMjQ1NTM2M119
 -->
