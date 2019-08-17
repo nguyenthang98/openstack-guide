@@ -465,6 +465,7 @@ systemctl start openstack-glance-api.service \
 . admin-rc
 
 # download the source image
+# Note: Install wget if your machine not include it
 wget http://download.cirros-cloud.net/0.4.0/cirros-0.4.0-x86_64-disk.img
 
 
@@ -477,11 +478,11 @@ wget http://download.cirros-cloud.net/0.4.0/cirros-0.4.0-x86_64-disk.img
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2NDcyNzI0MCwxMDE5NjQ0MDg2LC0xMz
-YwODY5NzgxLC0xMDgzNzI0NTA3LC0xMDA5ODgwNzE0LDI3ODQ1
-NjE0MSwtOTg0NDIwNDQ5LC0xMDYyMDMwODUzLDQ1NzQ2MDg3NS
-wtODkwNjkyNDA5LDE0ODg5NDEwMSw1NTY4MzU5NTIsLTk1MDE4
-MjA2NywyMzgwMzc4MDgsNjc1NzU3NTM4LDUyOTMzODkwMywtMj
-gyOTc3NDQxLDE3NTg5NjEzMCwyMDI2NDQ2ODkxLDk0MDAyMDcw
-NF19
+eyJoaXN0b3J5IjpbMTczNDgzMTI0OCwxMjY0NzI3MjQwLDEwMT
+k2NDQwODYsLTEzNjA4Njk3ODEsLTEwODM3MjQ1MDcsLTEwMDk4
+ODA3MTQsMjc4NDU2MTQxLC05ODQ0MjA0NDksLTEwNjIwMzA4NT
+MsNDU3NDYwODc1LC04OTA2OTI0MDksMTQ4ODk0MTAxLDU1Njgz
+NTk1MiwtOTUwMTgyMDY3LDIzODAzNzgwOCw2NzU3NTc1MzgsNT
+I5MzM4OTAzLC0yODI5Nzc0NDEsMTc1ODk2MTMwLDIwMjY0NDY4
+OTFdfQ==
 -->
