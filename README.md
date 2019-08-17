@@ -68,7 +68,7 @@ As recommended by OpenStack Installation Guilde, we're going to install Chrony, 
 		 - to enable other nodes connect to chrony deamon add the following line to **chrony.conf** file:
 		 `allow 192.168.122.0/24`
 		 - restart the NTP service:
-		# `service chronyd restart`
+		`service chronyd restart`
 		or
 		# `systemctl enable chronyd.service`
 		# `systemctl start chronyd.service`
@@ -79,31 +79,35 @@ As recommended by OpenStack Installation Guilde, we're going to install Chrony, 
 		- restart the **chronyd** service
 ##### Add OpenStack package repositories to yum
 Enable OpenStack extra repository for Stein release:
-`yum install centos-release-openstack-stein`
-`yum upgrade`
-`yum install python-openstackclient`
-`yum install openstack-selinux`
+```bash
+yum install centos-release-openstack-stein
+yum upgrade
+yum install python-openstackclient
+yum install openstack-selinux
+```
 ##### Install sql database for Controller node
 - `yum install mariadb mariadb-server python2-PyMySQL`
 - Create and edit **/etc/my.cnf.d/openstack.cnf**:
-```ini
-[mysqld]
-bind-address = 192.168.122.102
-default-storage-engine = innodb
-innodb_file_per_table = on
-max_connections = 4096
-collation-server = utf8_general_ci
-character-set-server = utf8
-```
+	```ini
+	[mysqld]
+	bind-address = 192.168.122.102
+	default-storage-engine = innodb
+	innodb_file_per_table = on
+	max_connections = 4096
+	collation-server = utf8_general_ci
+	character-set-server = utf8
+	```
 - Enable mariadb on startup and start db
-`systemctl enable mariadb`
-`systemctl start mariadb`
+	```bash
+	systemctl enable mariadb
+	systemctl start mariadb
+	```
 - After mysql database running, use `mysql_secure_installation` to secure your database.
 ##### Install Message-queue
 ```bash
-`yum install rabbitmq-server`
-`systemctl enable rabbitmq-server.service`
-`systemctl start rabbitmq-server.service`
+yum install rabbitmq-server
+systemctl enable rabbitmq-server.service
+systemctl start rabbitmq-server.service
 ```
 Add openstack user
 `rabbitmqctl add_user openstack RABBIT_PASS` (*Note: replace **RABBIT_PASS** with the suitable password on the password table you created before*)
@@ -152,7 +156,7 @@ systemctl start etcd
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyMTk1NjIwNiwtOTg0NDIwNDQ5LC0xMD
+eyJoaXN0b3J5IjpbLTU2ODg3NzUzOSwtOTg0NDIwNDQ5LC0xMD
 YyMDMwODUzLDQ1NzQ2MDg3NSwtODkwNjkyNDA5LDE0ODg5NDEw
 MSw1NTY4MzU5NTIsLTk1MDE4MjA2NywyMzgwMzc4MDgsNjc1Nz
 U3NTM4LDUyOTMzODkwMywtMjgyOTc3NDQxLDE3NTg5NjEzMCwy
