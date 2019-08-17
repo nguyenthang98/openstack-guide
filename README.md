@@ -317,24 +317,39 @@ MariaDB [(none)]> GRANT ALL PRIVILEGES ON glance.* TO 'glance'@'%' \
 ##### Create user and service
 - Source the admin resouce file: `. admin-rc`
 - Create **`glance`** user:
-```bash
-openstack user create --domain default --password-prompt glance
-User Password:
-Repeat User Password:
-+---------------------+----------------------------------+
-| Field               | Value                            |
-+---------------------+----------------------------------+
-| domain_id           | default                          |
-| enabled             | True                             |
-| id                  | d0fd0e4c10f74ac09fd2d1d371077f57 |
-| name                | glance                           |
-| options             | {}                               |
-| password_expires_at | None                             |
-+---------------------+----------------------------------+
-```
+	```bash
+	openstack user create --domain default --password-prompt glance
+	User Password:
+	Repeat User Password:
+	+---------------------+----------------------------------+
+	| Field               | Value                            |
+	+---------------------+----------------------------------+
+	| domain_id           | default                          |
+	| enabled             | True                             |
+	| id                  | d0fd0e4c10f74ac09fd2d1d371077f57 |
+	| name                | glance                           |
+	| options             | {}                               |
+	| password_expires_at | None                             |
+	+---------------------+----------------------------------+
+	```
 - add **`admin`** role to the **`glance`** user and **`service`** project:
-`openstack role add --project service --user glance admin
-
+	```bash
+	openstack role add --project service --user glance admin
+	```
+- Create the **`glance`** service entity:
+	```bash
+	openstack service create --name glance \
+	>   --description "OpenStack Image" image
+	+-------------+----------------------------------+
+	| Field       | Value                            |
+	+-------------+----------------------------------+
+	| description | OpenStack Image                  |
+	| enabled     | True                             |
+	| id          | 84b936dd7c074f609d4ad64d60c1fa1c |
+	| name        | glance                           |
+	| type        | image                            |
+	+-------------+----------------------------------+
+	  ```
 #### Install Placement Service (Placement)
 (Installation script)
 #### Install Compute Service (Nova)
@@ -343,11 +358,11 @@ Repeat User Password:
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTQzNzkwNiwtMTM2MDg2OTc4MSwtMT
-A4MzcyNDUwNywtMTAwOTg4MDcxNCwyNzg0NTYxNDEsLTk4NDQy
-MDQ0OSwtMTA2MjAzMDg1Myw0NTc0NjA4NzUsLTg5MDY5MjQwOS
-wxNDg4OTQxMDEsNTU2ODM1OTUyLC05NTAxODIwNjcsMjM4MDM3
-ODA4LDY3NTc1NzUzOCw1MjkzMzg5MDMsLTI4Mjk3NzQ0MSwxNz
-U4OTYxMzAsMjAyNjQ0Njg5MSw5NDAwMjA3MDQsLTMzMjQ1NTM2
-M119
+eyJoaXN0b3J5IjpbLTgwMzE5MDAwLC0xMzYwODY5NzgxLC0xMD
+gzNzI0NTA3LC0xMDA5ODgwNzE0LDI3ODQ1NjE0MSwtOTg0NDIw
+NDQ5LC0xMDYyMDMwODUzLDQ1NzQ2MDg3NSwtODkwNjkyNDA5LD
+E0ODg5NDEwMSw1NTY4MzU5NTIsLTk1MDE4MjA2NywyMzgwMzc4
+MDgsNjc1NzU3NTM4LDUyOTMzODkwMywtMjgyOTc3NDQxLDE3NT
+g5NjEzMCwyMDI2NDQ2ODkxLDk0MDAyMDcwNCwtMzMyNDU1MzYz
+XX0=
 -->
