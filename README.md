@@ -86,7 +86,7 @@ Enable OpenStack extra repository for Stein release:
 ##### Install sql database for Controller node
 - `yum install mariadb mariadb-server python2-PyMySQL`
 - Create and edit **/etc/my.cnf.d/openstack.cnf**:
-```
+```ini
 [mysqld]
 bind-address = 192.168.122.102
 default-storage-engine = innodb
@@ -116,7 +116,7 @@ Enable memcached on startup and start it:
 ##### Install Ectd (a distributed reliable key-value store)
 `yum install etcd`
 Edit the **/etc/etcd/etcd.conf** file and set the `ETCD_INITIAL_CLUSTER`, `ETCD_INITIAL_ADVERTISE_PEER_URLS`, `ETCD_ADVERTISE_CLIENT_URLS`, `ETCD_LISTEN_CLIENT_URLS` to the management IP address of the controller node.
-```python
+```ini
 #[Member]
 ETCD_DATA_DIR="/var/lib/etcd/default.etcd"
 ETCD_LISTEN_PEER_URLS="http://192.168.122.102:2380"
@@ -129,6 +129,7 @@ ETCD_INITIAL_CLUSTER="controller=http://192.168.122.102:2380"
 ETCD_INITIAL_CLUSTER_TOKEN="etcd-cluster-01"
 ETCD_INITIAL_CLUSTER_STATE="new"
 ```
+
 
 #### Install OpenStack - Stein Release
 ##### Install Identity Service (Keystone)
@@ -143,9 +144,9 @@ ETCD_INITIAL_CLUSTER_STATE="new"
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5NzYyMzg0NSwtOTg0NDIwNDQ5LC0xMD
-YyMDMwODUzLDQ1NzQ2MDg3NSwtODkwNjkyNDA5LDE0ODg5NDEw
-MSw1NTY4MzU5NTIsLTk1MDE4MjA2NywyMzgwMzc4MDgsNjc1Nz
-U3NTM4LDUyOTMzODkwMywtMjgyOTc3NDQxLDE3NTg5NjEzMCwy
-MDI2NDQ2ODkxLDk0MDAyMDcwNCwtMzMyNDU1MzYzXX0=
+eyJoaXN0b3J5IjpbLTE4Nzc3OTUyNzcsLTk4NDQyMDQ0OSwtMT
+A2MjAzMDg1Myw0NTc0NjA4NzUsLTg5MDY5MjQwOSwxNDg4OTQx
+MDEsNTU2ODM1OTUyLC05NTAxODIwNjcsMjM4MDM3ODA4LDY3NT
+c1NzUzOCw1MjkzMzg5MDMsLTI4Mjk3NzQ0MSwxNzU4OTYxMzAs
+MjAyNjQ0Njg5MSw5NDAwMjA3MDQsLTMzMjQ1NTM2M119
 -->
