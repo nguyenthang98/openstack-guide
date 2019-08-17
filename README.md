@@ -36,7 +36,7 @@ We will install OpenStack with following architecture
 ##### Setting up persistent network and ssh authentication
 (networking script)
 ##### Security
-You can chose any password you want. But i recommend you generate them using a tool such as [pwgen](https://sourceforge.net/projects/pwgen/)  or running the following command `openssl rand -hex 10` 
+You can chose any password you want. But i recommend you generate them using a tool such as [pwgen](https://sourceforge.net/projects/pwgen/)  or running the following command `openssl rand -hex 10` (*Note: Replace 10 by password length which comfort to you*);
 |Variable|Description|
 |--|--|
 |`ADMIN_PASS` | Password of user  `admin` |
@@ -67,7 +67,7 @@ You can chose any password you want. But i recommend you generate them using a t
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1MzM1NTEwOCwyMzgwMzc4MDgsNjc1Nz
-U3NTM4LDUyOTMzODkwMywtMjgyOTc3NDQxLDE3NTg5NjEzMCwy
-MDI2NDQ2ODkxLDk0MDAyMDcwNCwtMzMyNDU1MzYzXX0=
+eyJoaXN0b3J5IjpbNzE3MzQwMjM2LDIzODAzNzgwOCw2NzU3NT
+c1MzgsNTI5MzM4OTAzLC0yODI5Nzc0NDEsMTc1ODk2MTMwLDIw
+MjY0NDY4OTEsOTQwMDIwNzA0LC0zMzI0NTUzNjNdfQ==
 -->
