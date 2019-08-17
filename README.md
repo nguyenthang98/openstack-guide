@@ -157,7 +157,7 @@ IDENTIFIED BY 'KEYSTONE_DBPASS';
 MariaDB [(none)]> GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'%' \
 IDENTIFIED BY 'KEYSTONE_DBPASS';
  ```
- (*Note: pr*)
+ (*Note: replace KEYSTONE_DBPASS with suitable password in the password table you created before*)
 #### Install Image Service (Glance)
 (Installation script)
 #### Install Placement Service (Placement)
@@ -168,7 +168,7 @@ IDENTIFIED BY 'KEYSTONE_DBPASS';
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDg5MzUzNTgsLTk4NDQyMDQ0OSwtMT
+eyJoaXN0b3J5IjpbLTE1NjQ2NDE0NDUsLTk4NDQyMDQ0OSwtMT
 A2MjAzMDg1Myw0NTc0NjA4NzUsLTg5MDY5MjQwOSwxNDg4OTQx
 MDEsNTU2ODM1OTUyLC05NTAxODIwNjcsMjM4MDM3ODA4LDY3NT
 c1NzUzOCw1MjkzMzg5MDMsLTI4Mjk3NzQ0MSwxNzU4OTYxMzAs
