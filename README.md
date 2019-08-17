@@ -177,6 +177,19 @@ IDENTIFIED BY 'KEYSTONE_DBPASS';
 ```bash
 su -s /bin/sh -c "keystone-manage db_sync" keystone
 ```
+- Initialize Fernet key repositories:
+```bash
+keystone-manage fernet_setup --keystone-user keystone --keystone-group keystone
+keystone-manage credential_setup --keystone-user keystone --keystone-group keystone
+```
+- Bootstrap the Identity service:
+```bash
+keystone-manage bootstrap --bootstrap-password ADMIN_PASS \
+  --bootstrap-admin-url http://controller:5000/v3/ \
+  --bootstrap-internal-url http://controller:5000/v3/ \
+  --bootstrap-public-url http://controller:5000/v3/ \
+  --bootstrap-region-id RegionOne
+```
 #### Install Image Service (Glance)
 (Installation script)
 #### Install Placement Service (Placement)
@@ -187,9 +200,9 @@ su -s /bin/sh -c "keystone-manage db_sync" keystone
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTgwMzk4MDMsLTk4NDQyMDQ0OSwtMT
-A2MjAzMDg1Myw0NTc0NjA4NzUsLTg5MDY5MjQwOSwxNDg4OTQx
-MDEsNTU2ODM1OTUyLC05NTAxODIwNjcsMjM4MDM3ODA4LDY3NT
-c1NzUzOCw1MjkzMzg5MDMsLTI4Mjk3NzQ0MSwxNzU4OTYxMzAs
-MjAyNjQ0Njg5MSw5NDAwMjA3MDQsLTMzMjQ1NTM2M119
+eyJoaXN0b3J5IjpbNDk2NjU4Nzk5LC05ODQ0MjA0NDksLTEwNj
+IwMzA4NTMsNDU3NDYwODc1LC04OTA2OTI0MDksMTQ4ODk0MTAx
+LDU1NjgzNTk1MiwtOTUwMTgyMDY3LDIzODAzNzgwOCw2NzU3NT
+c1MzgsNTI5MzM4OTAzLC0yODI5Nzc0NDEsMTc1ODk2MTMwLDIw
+MjY0NDY4OTEsOTQwMDIwNzA0LC0zMzI0NTUzNjNdfQ==
 -->
