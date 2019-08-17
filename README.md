@@ -489,6 +489,16 @@ MariaDB [(none)]> GRANT ALL PRIVILEGES ON placement.* TO 'placement'@'%' \
  IDENTIFIED BY 'PLACEMENT_DBPASS';
 ```
 (*Note: replace PLACEMENT_DBPASS with suitable password*)
+##### Create user and service
+```bash
+# source the admin resource file
+. admin-rc
+
+# create placement user
+openstack user create --domain default --password-prompt placement
+
+
+```
 
 #### Install Compute Service (Nova)
 (Nova Installation script)
@@ -496,11 +506,11 @@ MariaDB [(none)]> GRANT ALL PRIVILEGES ON placement.* TO 'placement'@'%' \
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3OTkyNzg5MSw0MDc0NTM4NTksMTI2ND
-cyNzI0MCwxMDE5NjQ0MDg2LC0xMzYwODY5NzgxLC0xMDgzNzI0
-NTA3LC0xMDA5ODgwNzE0LDI3ODQ1NjE0MSwtOTg0NDIwNDQ5LC
-0xMDYyMDMwODUzLDQ1NzQ2MDg3NSwtODkwNjkyNDA5LDE0ODg5
-NDEwMSw1NTY4MzU5NTIsLTk1MDE4MjA2NywyMzgwMzc4MDgsNj
-c1NzU3NTM4LDUyOTMzODkwMywtMjgyOTc3NDQxLDE3NTg5NjEz
-MF19
+eyJoaXN0b3J5IjpbLTE5MTE5NzEzNDIsMjA3OTkyNzg5MSw0MD
+c0NTM4NTksMTI2NDcyNzI0MCwxMDE5NjQ0MDg2LC0xMzYwODY5
+NzgxLC0xMDgzNzI0NTA3LC0xMDA5ODgwNzE0LDI3ODQ1NjE0MS
+wtOTg0NDIwNDQ5LC0xMDYyMDMwODUzLDQ1NzQ2MDg3NSwtODkw
+NjkyNDA5LDE0ODg5NDEwMSw1NTY4MzU5NTIsLTk1MDE4MjA2Ny
+wyMzgwMzc4MDgsNjc1NzU3NTM4LDUyOTMzODkwMywtMjgyOTc3
+NDQxXX0=
 -->
