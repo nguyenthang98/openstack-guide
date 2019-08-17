@@ -76,14 +76,8 @@ As recommended by OpenStack Installation Guilde, we're going to install Chrony, 
 		`server controller iburst`
 		- restart the **chronyd** service
 ##### Add OpenStack package repositories to yum
-- Subscribe repos:
- `subscription-manager repos --enable=rhel-7-server-optional-rpms 
-  --enable=rhel-7-server-extras-rpms --enable=rhel-7-server-rh-common-rpms`
- - Enable OpenStack repository:
-	 `yum install centos-release-openstack-rocky`
-	 `yum install centos-release-openstack-queens`
-	 `yum install centos-release-openstack-pike`
-	 `yum install https://rdoproject.org/repos/rdo-release.rpm`
+Enable OpenStack repository:
+
 #### Install OpenStack - Stein Release
 ##### Install Identity Service (Keystone)
 (Keystone installation script)
@@ -97,8 +91,8 @@ As recommended by OpenStack Installation Guilde, we're going to install Chrony, 
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4NTEzOTAzMiw1NTY4MzU5NTIsLTk1MD
-E4MjA2NywyMzgwMzc4MDgsNjc1NzU3NTM4LDUyOTMzODkwMywt
-MjgyOTc3NDQxLDE3NTg5NjEzMCwyMDI2NDQ2ODkxLDk0MDAyMD
-cwNCwtMzMyNDU1MzYzXX0=
+eyJoaXN0b3J5IjpbLTEzNjgwODg5NjMsNTU2ODM1OTUyLC05NT
+AxODIwNjcsMjM4MDM3ODA4LDY3NTc1NzUzOCw1MjkzMzg5MDMs
+LTI4Mjk3NzQ0MSwxNzU4OTYxMzAsMjAyNjQ0Njg5MSw5NDAwMj
+A3MDQsLTMzMjQ1NTM2M119
 -->
