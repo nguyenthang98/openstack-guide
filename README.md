@@ -76,8 +76,9 @@ As recommended by OpenStack Installation Guilde, we're going to install Chrony, 
 		`server controller iburst`
 		- restart the **chronyd** service
 ##### Add OpenStack package repositories to yum
-Enable OpenStack repository:
-
+Enable OpenStack extra repository for Stein release:
+`yum install centos-release-openstack-stein`
+`yum upgrade`
 #### Install OpenStack - Stein Release
 ##### Install Identity Service (Keystone)
 (Keystone installation script)
@@ -91,8 +92,8 @@ Enable OpenStack repository:
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjgwODg5NjMsNTU2ODM1OTUyLC05NT
-AxODIwNjcsMjM4MDM3ODA4LDY3NTc1NzUzOCw1MjkzMzg5MDMs
-LTI4Mjk3NzQ0MSwxNzU4OTYxMzAsMjAyNjQ0Njg5MSw5NDAwMj
-A3MDQsLTMzMjQ1NTM2M119
+eyJoaXN0b3J5IjpbMjc0MzM4NjgsNTU2ODM1OTUyLC05NTAxOD
+IwNjcsMjM4MDM3ODA4LDY3NTc1NzUzOCw1MjkzMzg5MDMsLTI4
+Mjk3NzQ0MSwxNzU4OTYxMzAsMjAyNjQ0Njg5MSw5NDAwMjA3MD
+QsLTMzMjQ1NTM2M119
 -->
