@@ -559,7 +559,7 @@ placement-status upgrade check
 pip install osc-placement
 # list available resource classes and traits
 openstack --os-placement-api-version 1.2 resource class list --sort-column name
-
+openstack --os-placement-api-version 1.6 trait list --sort-column name
 ```
 #### Install Compute Service (Nova)
 (Nova Installation script)
@@ -567,7 +567,7 @@ openstack --os-placement-api-version 1.2 resource class list --sort-column name
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3MDg5OTczNCwyMDc5OTI3ODkxLDQwNz
+eyJoaXN0b3J5IjpbLTcyOTk1MTg2NywyMDc5OTI3ODkxLDQwNz
 Q1Mzg1OSwxMjY0NzI3MjQwLDEwMTk2NDQwODYsLTEzNjA4Njk3
 ODEsLTEwODM3MjQ1MDcsLTEwMDk4ODA3MTQsMjc4NDU2MTQxLC
 05ODQ0MjA0NDksLTEwNjIwMzA4NTMsNDU3NDYwODc1LC04OTA2
