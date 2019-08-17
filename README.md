@@ -66,12 +66,14 @@ As recommended by OpenStack Installation Guilde, we're going to install Chrony, 
 		 `server 192.168.122.102 iburst`
 		 (*Note: we are going to use management ip address of controller-vm to run chrony server*)
 		 - to enable other nodes connect to chrony deamon add the following line to **chrony.conf** file:
-		 `allow 192.168.122.0/24`
+		`allow 192.168.122.0/24`
 		 - restart the NTP service:
 		`service chronyd restart`
 		or
-		# `systemctl enable chronyd.service`
-		# `systemctl start chronyd.service`
+	```bash
+	systemctl enable chronyd.service
+	systemctl start chronyd.service
+	```
  - On compute-vm:
 		-	install chrony same as controller node
 		-	edit the **/etc/chrony.conf** file as follow:
@@ -156,7 +158,7 @@ systemctl start etcd
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2ODg3NzUzOSwtOTg0NDIwNDQ5LC0xMD
+eyJoaXN0b3J5IjpbLTc5ODc0ODU3NSwtOTg0NDIwNDQ5LC0xMD
 YyMDMwODUzLDQ1NzQ2MDg3NSwtODkwNjkyNDA5LDE0ODg5NDEw
 MSw1NTY4MzU5NTIsLTk1MDE4MjA2NywyMzgwMzc4MDgsNjc1Nz
 U3NTM4LDUyOTMzODkwMywtMjgyOTc3NDQxLDE3NTg5NjEzMCwy
