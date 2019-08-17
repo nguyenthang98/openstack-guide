@@ -216,6 +216,16 @@ export OS_AUTH_URL=http://controller:5000/v3
 export OS_IDENTITY_API_VERSION=3
 ```
 ##### Create a domain, projects, users, and roles
+```bash
+# create default domain
+openstack domain create --description "An Example Domain" example
+
+# create project service
+openstack project create --domain default \
+  --description "Service Project" service
+
+# 
+```
 
 #### Install Image Service (Glance)
 (Installation script)
@@ -227,10 +237,10 @@ export OS_IDENTITY_API_VERSION=3
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDEyNzQyODYsMjc4NDU2MTQxLC05OD
-Q0MjA0NDksLTEwNjIwMzA4NTMsNDU3NDYwODc1LC04OTA2OTI0
-MDksMTQ4ODk0MTAxLDU1NjgzNTk1MiwtOTUwMTgyMDY3LDIzOD
-AzNzgwOCw2NzU3NTc1MzgsNTI5MzM4OTAzLC0yODI5Nzc0NDEs
-MTc1ODk2MTMwLDIwMjY0NDY4OTEsOTQwMDIwNzA0LC0zMzI0NT
-UzNjNdfQ==
+eyJoaXN0b3J5IjpbNzIyMzYyMDk2LDI3ODQ1NjE0MSwtOTg0ND
+IwNDQ5LC0xMDYyMDMwODUzLDQ1NzQ2MDg3NSwtODkwNjkyNDA5
+LDE0ODg5NDEwMSw1NTY4MzU5NTIsLTk1MDE4MjA2NywyMzgwMz
+c4MDgsNjc1NzU3NTM4LDUyOTMzODkwMywtMjgyOTc3NDQxLDE3
+NTg5NjEzMCwyMDI2NDQ2ODkxLDk0MDAyMDcwNCwtMzMyNDU1Mz
+YzXX0=
 -->
