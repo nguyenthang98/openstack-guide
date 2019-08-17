@@ -275,7 +275,7 @@ Password:
 +------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
 ##### Create client environment script
-- create **`admin-rc`** file
+- create **`admin-rc`** file:
 ```bash
 export OS_PROJECT_DOMAIN_NAME=Default
 export OS_USER_DOMAIN_NAME=Default
@@ -289,7 +289,17 @@ export OS_IMAGE_API_VERSION=2
 (*Note: replace ADMIN_PASS by suitable password*)
 - create **`demo-rc`** file:
 ```bash
+export OS_PROJECT_DOMAIN_NAME=Default
+export OS_USER_DOMAIN_NAME=Default
+export OS_PROJECT_NAME=myproject
+export OS_USERNAME=myuser
+export OS_PASSWORD=MYUSER_PASS
+export OS_AUTH_URL=http://controller:5000/v3
+export OS_IDENTITY_API_VERSION=3
+export OS_IMAGE_API_VERSION=2
 ```
+(*Note: replace MYUSER_PASS with suitable password*)
+
 #### Install Image Service (Glance)
 (Installation script)
 #### Install Placement Service (Placement)
@@ -300,10 +310,10 @@ export OS_IMAGE_API_VERSION=2
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5Njc3NDMxOCwtMTAwOTg4MDcxNCwyNz
-g0NTYxNDEsLTk4NDQyMDQ0OSwtMTA2MjAzMDg1Myw0NTc0NjA4
-NzUsLTg5MDY5MjQwOSwxNDg4OTQxMDEsNTU2ODM1OTUyLC05NT
-AxODIwNjcsMjM4MDM3ODA4LDY3NTc1NzUzOCw1MjkzMzg5MDMs
-LTI4Mjk3NzQ0MSwxNzU4OTYxMzAsMjAyNjQ0Njg5MSw5NDAwMj
-A3MDQsLTMzMjQ1NTM2M119
+eyJoaXN0b3J5IjpbLTEwMzE2NTk2NDgsLTEwMDk4ODA3MTQsMj
+c4NDU2MTQxLC05ODQ0MjA0NDksLTEwNjIwMzA4NTMsNDU3NDYw
+ODc1LC04OTA2OTI0MDksMTQ4ODk0MTAxLDU1NjgzNTk1MiwtOT
+UwMTgyMDY3LDIzODAzNzgwOCw2NzU3NTc1MzgsNTI5MzM4OTAz
+LC0yODI5Nzc0NDEsMTc1ODk2MTMwLDIwMjY0NDY4OTEsOTQwMD
+IwNzA0LC0zMzI0NTUzNjNdfQ==
 -->
