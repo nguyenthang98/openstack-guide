@@ -60,7 +60,8 @@ As recommended by OpenStack Installation Guilde, we're going to install Chrony, 
 
  - On controller-vm:
 		 - # `yum install chrony`
-		 - edit the **/etc/chrony.conf** file
+		 - edit the **/etc/chrony.conf** file:
+		 - 
  - On compute-vm:
 
 #### Install OpenStack - Stein Release
@@ -76,7 +77,7 @@ As recommended by OpenStack Installation Guilde, we're going to install Chrony, 
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzMDI2NjIyNiwyMzgwMzc4MDgsNjc1Nz
-U3NTM4LDUyOTMzODkwMywtMjgyOTc3NDQxLDE3NTg5NjEzMCwy
-MDI2NDQ2ODkxLDk0MDAyMDcwNCwtMzMyNDU1MzYzXX0=
+eyJoaXN0b3J5IjpbLTEwMTAwNDQ4MzcsMjM4MDM3ODA4LDY3NT
+c1NzUzOCw1MjkzMzg5MDMsLTI4Mjk3NzQ0MSwxNzU4OTYxMzAs
+MjAyNjQ0Njg5MSw5NDAwMjA3MDQsLTMzMjQ1NTM2M119
 -->
