@@ -403,52 +403,53 @@ MariaDB [(none)]> GRANT ALL PRIVILEGES ON glance.* TO 'glance'@'%' \
 ##### Install and configure components
 - Install packages: `yum install openstack-glance`
 - Edit the **`/etc/glance/glance-api.conf`** file:
-```ini
-[database]
-# ...
-connection = mysql+pymysql://glance:GLANCE_DBPASS@controller/glance
-# ...
-[keystone_authtoken]
-www_authenticate_uri  = http://controller:5000
-auth_url = http://controller:5000
-memcached_servers = controller:11211
-auth_type = password
-project_domain_name = Default
-user_domain_name = Default
-project_name = service
-username = glance
-password = GLANCE_PASS
+	```ini
+	[database]
+	# ...
+	connection = mysql+pymysql://glance:GLANCE_DBPASS@controller/glance
+	# ...
+	[keystone_authtoken]
+	www_authenticate_uri  = http://controller:5000
+	auth_url = http://controller:5000
+	memcached_servers = controller:11211
+	auth_type = password
+	project_domain_name = Default
+	user_domain_name = Default
+	project_name = service
+	username = glance
+	password = GLANCE_PASS
 
-[paste_deploy]
-flavor = keystone
+	[paste_deploy]
+	flavor = keystone
 
-[glance_store]
-stores = file,http
-default_store = file
-filesystem_store_datadir = /var/lib/glance/images/
-```
-(*Note: replace GLANCE_DBPASS and GLANCE_PASS with suitable password*)
+	[glance_store]
+	stores = file,http
+	default_store = file
+	filesystem_store_datadir = /var/lib/glance/images/
+	```
+	(*Note: replace GLANCE_DBPASS and GLANCE_PASS with suitable password*)
 - Edit the **`/etc/glance/glance-registry.conf`** file:
-```ini
-[database]
-connection = mysql+pymysql://glance:GLANCE_DBPASS@controller/glance
+	```ini
+	[database]
+	connection = mysql+pymysql://glance:GLANCE_DBPASS@controller/glance
 
-[keystone_authtoken]
-www_authenticate_uri = http://controller:5000
-auth_url = http://controller:5000
-memcached_servers = controller:11211
-auth_type = password
-project_domain_name = Default
-user_domain_name = Default
-project_name = service
-username = glance
-password = GLANCE_PASS
+	[keystone_authtoken]
+	www_authenticate_uri = http://controller:5000
+	auth_url = http://controller:5000
+	memcached_servers = controller:11211
+	auth_type = password
+	project_domain_name = Default
+	user_domain_name = Default
+	project_name = service
+	username = glance
+	password = GLANCE_PASS
 
-[paste_deploy]
-flavor = keystone
-```
-(*Note: replace GLANCE_DBPASS and GLANCE_PASS with suitable password*)
-
+	[paste_deploy]
+	flavor = keystone
+	```
+	(*Note: replace GLANCE_DBPASS and GLANCE_PASS with suitable password*)
+- Populate the database:
+-
 #### Install Placement Service (Placement)
 (Installation script)
 #### Install Compute Service (Nova)
@@ -457,7 +458,7 @@ flavor = keystone
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjIyOTIxNDksLTEzNjA4Njk3ODEsLT
+eyJoaXN0b3J5IjpbLTIwOTY2NTAzNjEsLTEzNjA4Njk3ODEsLT
 EwODM3MjQ1MDcsLTEwMDk4ODA3MTQsMjc4NDU2MTQxLC05ODQ0
 MjA0NDksLTEwNjIwMzA4NTMsNDU3NDYwODc1LC04OTA2OTI0MD
 ksMTQ4ODk0MTAxLDU1NjgzNTk1MiwtOTUwMTgyMDY3LDIzODAz
