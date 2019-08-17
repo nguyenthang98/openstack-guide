@@ -146,8 +146,10 @@ systemctl start etcd
 ```
 ### Install OpenStack services - Stein Release
 #### Install Identity Service (Keystone)
-##### Keystone
+##### Prerequisites
 
+Create keystone database:
+ - 
 #### Install Image Service (Glance)
 (Installation script)
 #### Install Placement Service (Placement)
@@ -158,7 +160,7 @@ systemctl start etcd
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4MTk1MDM4MywtOTg0NDIwNDQ5LC0xMD
+eyJoaXN0b3J5IjpbMjA1Mzg5MTEzOCwtOTg0NDIwNDQ5LC0xMD
 YyMDMwODUzLDQ1NzQ2MDg3NSwtODkwNjkyNDA5LDE0ODg5NDEw
 MSw1NTY4MzU5NTIsLTk1MDE4MjA2NywyMzgwMzc4MDgsNjc1Nz
 U3NTM4LDUyOTMzODkwMywtMjgyOTc3NDQxLDE3NTg5NjEzMCwy
