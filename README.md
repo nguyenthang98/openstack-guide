@@ -96,7 +96,9 @@ character-set-server = utf8
 - Enable mariadb on startup and start db
 `systemctl enable mariadb`
 `systemctl start mariadb`
-- After mysql database running, use `mysql_secure_installation` to secure your data
+- After mysql database running, use `mysql_secure_installation` to secure your database.
+##### Install Message-queue
+
 #### Install OpenStack - Stein Release
 ##### Install Identity Service (Keystone)
 (Keystone installation script)
@@ -110,9 +112,9 @@ character-set-server = utf8
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjM4NjE5NzEsNDU3NDYwODc1LC04OT
-A2OTI0MDksMTQ4ODk0MTAxLDU1NjgzNTk1MiwtOTUwMTgyMDY3
-LDIzODAzNzgwOCw2NzU3NTc1MzgsNTI5MzM4OTAzLC0yODI5Nz
-c0NDEsMTc1ODk2MTMwLDIwMjY0NDY4OTEsOTQwMDIwNzA0LC0z
-MzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbMTk3NjE1MjQwOSw0NTc0NjA4NzUsLTg5MD
+Y5MjQwOSwxNDg4OTQxMDEsNTU2ODM1OTUyLC05NTAxODIwNjcs
+MjM4MDM3ODA4LDY3NTc1NzUzOCw1MjkzMzg5MDMsLTI4Mjk3Nz
+Q0MSwxNzU4OTYxMzAsMjAyNjQ0Njg5MSw5NDAwMjA3MDQsLTMz
+MjQ1NTM2M119
 -->
