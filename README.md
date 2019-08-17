@@ -449,7 +449,16 @@ MariaDB [(none)]> GRANT ALL PRIVILEGES ON glance.* TO 'glance'@'%' \
 	```
 	(*Note: replace GLANCE_DBPASS and GLANCE_PASS with suitable password*)
 - Populate the database:
--
+```bash
+su -s /bin/sh -c "glance-manage db_sync" glance
+```
+- Enable on startup and start services:
+```bash
+systemctl enable openstack-glance-api.service \
+  openstack-glance-registry.service
+systemctl start openstack-glance-api.service \
+  openstack-glance-registry.service
+```
 #### Install Placement Service (Placement)
 (Installation script)
 #### Install Compute Service (Nova)
@@ -458,11 +467,11 @@ MariaDB [(none)]> GRANT ALL PRIVILEGES ON glance.* TO 'glance'@'%' \
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTY2NTAzNjEsLTEzNjA4Njk3ODEsLT
-EwODM3MjQ1MDcsLTEwMDk4ODA3MTQsMjc4NDU2MTQxLC05ODQ0
-MjA0NDksLTEwNjIwMzA4NTMsNDU3NDYwODc1LC04OTA2OTI0MD
-ksMTQ4ODk0MTAxLDU1NjgzNTk1MiwtOTUwMTgyMDY3LDIzODAz
-NzgwOCw2NzU3NTc1MzgsNTI5MzM4OTAzLC0yODI5Nzc0NDEsMT
-c1ODk2MTMwLDIwMjY0NDY4OTEsOTQwMDIwNzA0LC0zMzI0NTUz
-NjNdfQ==
+eyJoaXN0b3J5IjpbLTc1MTczMDAzNCwtMTM2MDg2OTc4MSwtMT
+A4MzcyNDUwNywtMTAwOTg4MDcxNCwyNzg0NTYxNDEsLTk4NDQy
+MDQ0OSwtMTA2MjAzMDg1Myw0NTc0NjA4NzUsLTg5MDY5MjQwOS
+wxNDg4OTQxMDEsNTU2ODM1OTUyLC05NTAxODIwNjcsMjM4MDM3
+ODA4LDY3NTc1NzUzOCw1MjkzMzg5MDMsLTI4Mjk3NzQ0MSwxNz
+U4OTYxMzAsMjAyNjQ0Njg5MSw5NDAwMjA3MDQsLTMzMjQ1NTM2
+M119
 -->
