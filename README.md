@@ -62,7 +62,8 @@ As recommended by OpenStack Installation Guilde, we're going to install Chrony, 
 		 - # `yum install chrony`
 		 - edit the **/etc/chrony.conf** file:
 		 `server 192.168.122.102 iburst`
-		 (*Note: we are going to use management ip address of controller-vm to *)
+		 (*Note: we are going to use management ip address of controller-vm to run chrony server*)
+		 - to enable other nodes connect to chrony deamon add the following line to **chroney
  - On compute-vm:
 
 #### Install OpenStack - Stein Release
@@ -78,7 +79,7 @@ As recommended by OpenStack Installation Guilde, we're going to install Chrony, 
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzNjM3Mjc4OCwyMzgwMzc4MDgsNjc1Nz
+eyJoaXN0b3J5IjpbMTgyMjg1NDA5NywyMzgwMzc4MDgsNjc1Nz
 U3NTM4LDUyOTMzODkwMywtMjgyOTc3NDQxLDE3NTg5NjEzMCwy
 MDI2NDQ2ODkxLDk0MDAyMDcwNCwtMzMyNDU1MzYzXX0=
 -->
