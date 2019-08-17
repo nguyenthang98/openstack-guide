@@ -449,16 +449,16 @@ MariaDB [(none)]> GRANT ALL PRIVILEGES ON glance.* TO 'glance'@'%' \
 	```
 	(*Note: replace GLANCE_DBPASS and GLANCE_PASS with suitable password*)
 - Populate the database:
-```bash
-su -s /bin/sh -c "glance-manage db_sync" glance
-```
+	```bash
+	su -s /bin/sh -c "glance-manage db_sync" glance
+	```
 - Enable on startup and start services:
-```bash
-systemctl enable openstack-glance-api.service \
-  openstack-glance-registry.service
-systemctl start openstack-glance-api.service \
-  openstack-glance-registry.service
-```
+	```bash
+	systemctl enable openstack-glance-api.service \
+	  openstack-glance-registry.service
+	systemctl start openstack-glance-api.service \
+	  openstack-glance-registry.service
+	```
 ##### Verify operation
 ```bash
 # source the admin resource file
@@ -473,6 +473,10 @@ openstack image create "cirros" \
   --file cirros-0.4.0-x86_64-disk.img \
   --disk-format qcow2 --container-format bare \
   --public
+  
+# Confirm that image is loaded
+openstack image list
+  
 ```
 #### Install Placement Service (Placement)
 (Installation script)
@@ -482,11 +486,11 @@ openstack image create "cirros" \
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Nzc1NzE0MjUsNDA3NDUzODU5LDEyNj
-Q3MjcyNDAsMTAxOTY0NDA4NiwtMTM2MDg2OTc4MSwtMTA4Mzcy
-NDUwNywtMTAwOTg4MDcxNCwyNzg0NTYxNDEsLTk4NDQyMDQ0OS
-wtMTA2MjAzMDg1Myw0NTc0NjA4NzUsLTg5MDY5MjQwOSwxNDg4
-OTQxMDEsNTU2ODM1OTUyLC05NTAxODIwNjcsMjM4MDM3ODA4LD
-Y3NTc1NzUzOCw1MjkzMzg5MDMsLTI4Mjk3NzQ0MSwxNzU4OTYx
-MzBdfQ==
+eyJoaXN0b3J5IjpbMjEzNjI2ODY4Niw0MDc0NTM4NTksMTI2ND
+cyNzI0MCwxMDE5NjQ0MDg2LC0xMzYwODY5NzgxLC0xMDgzNzI0
+NTA3LC0xMDA5ODgwNzE0LDI3ODQ1NjE0MSwtOTg0NDIwNDQ5LC
+0xMDYyMDMwODUzLDQ1NzQ2MDg3NSwtODkwNjkyNDA5LDE0ODg5
+NDEwMSw1NTY4MzU5NTIsLTk1MDE4MjA2NywyMzgwMzc4MDgsNj
+c1NzU3NTM4LDUyOTMzODkwMywtMjgyOTc3NDQxLDE3NTg5NjEz
+MF19
 -->
