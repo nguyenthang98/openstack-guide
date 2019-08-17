@@ -497,7 +497,12 @@ MariaDB [(none)]> GRANT ALL PRIVILEGES ON placement.* TO 'placement'@'%' \
 # create placement user
 openstack user create --domain default --password-prompt placement
 
+# add admin role to user placement in project service
+openstack role add --project service --user placement admin
 
+# create placement API entry on service catalog
+openstack service create --name placement \
+  --description "Placement API" placement
 ```
 
 #### Install Compute Service (Nova)
@@ -506,11 +511,11 @@ openstack user create --domain default --password-prompt placement
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTE5NzEzNDIsMjA3OTkyNzg5MSw0MD
-c0NTM4NTksMTI2NDcyNzI0MCwxMDE5NjQ0MDg2LC0xMzYwODY5
-NzgxLC0xMDgzNzI0NTA3LC0xMDA5ODgwNzE0LDI3ODQ1NjE0MS
-wtOTg0NDIwNDQ5LC0xMDYyMDMwODUzLDQ1NzQ2MDg3NSwtODkw
-NjkyNDA5LDE0ODg5NDEwMSw1NTY4MzU5NTIsLTk1MDE4MjA2Ny
-wyMzgwMzc4MDgsNjc1NzU3NTM4LDUyOTMzODkwMywtMjgyOTc3
-NDQxXX0=
+eyJoaXN0b3J5IjpbNTIxMTQ4NDE5LDIwNzk5Mjc4OTEsNDA3ND
+UzODU5LDEyNjQ3MjcyNDAsMTAxOTY0NDA4NiwtMTM2MDg2OTc4
+MSwtMTA4MzcyNDUwNywtMTAwOTg4MDcxNCwyNzg0NTYxNDEsLT
+k4NDQyMDQ0OSwtMTA2MjAzMDg1Myw0NTc0NjA4NzUsLTg5MDY5
+MjQwOSwxNDg4OTQxMDEsNTU2ODM1OTUyLC05NTAxODIwNjcsMj
+M4MDM3ODA4LDY3NTc1NzUzOCw1MjkzMzg5MDMsLTI4Mjk3NzQ0
+MV19
 -->
