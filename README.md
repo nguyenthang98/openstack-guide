@@ -577,17 +577,21 @@ The solution is adding these line to file **`/etc/httpd/conf.d/00-placement-api.
    </IfVersion>
 </Directory>
 ```
+and restart the httpd service:
+```bash
+systemctl restart httpd
+```
 #### Install Compute Service (Nova)
 (Nova Installation script)
 #### Install Networking Service (Neutron)
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2MDU5Njc2MSwtNzI5OTUxODY3LDIwNz
-k5Mjc4OTEsNDA3NDUzODU5LDEyNjQ3MjcyNDAsMTAxOTY0NDA4
-NiwtMTM2MDg2OTc4MSwtMTA4MzcyNDUwNywtMTAwOTg4MDcxNC
-wyNzg0NTYxNDEsLTk4NDQyMDQ0OSwtMTA2MjAzMDg1Myw0NTc0
-NjA4NzUsLTg5MDY5MjQwOSwxNDg4OTQxMDEsNTU2ODM1OTUyLC
-05NTAxODIwNjcsMjM4MDM3ODA4LDY3NTc1NzUzOCw1MjkzMzg5
-MDNdfQ==
+eyJoaXN0b3J5IjpbLTc2MTcyMjk2LC03Mjk5NTE4NjcsMjA3OT
+kyNzg5MSw0MDc0NTM4NTksMTI2NDcyNzI0MCwxMDE5NjQ0MDg2
+LC0xMzYwODY5NzgxLC0xMDgzNzI0NTA3LC0xMDA5ODgwNzE0LD
+I3ODQ1NjE0MSwtOTg0NDIwNDQ5LC0xMDYyMDMwODUzLDQ1NzQ2
+MDg3NSwtODkwNjkyNDA5LDE0ODg5NDEwMSw1NTY4MzU5NTIsLT
+k1MDE4MjA2NywyMzgwMzc4MDgsNjc1NzU3NTM4LDUyOTMzODkw
+M119
 -->
