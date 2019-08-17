@@ -149,7 +149,7 @@ systemctl start etcd
 ##### Prerequisites
 
 Create keystone database:
- ```sql
+ ```bash
  $ mysql -u root -p
 MariaDB [(none)]> CREATE DATABASE keystone;
 MariaDB [(none)]> GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'localhost' \
@@ -299,10 +299,22 @@ export OS_IDENTITY_API_VERSION=3
 export OS_IMAGE_API_VERSION=2
 ```
 (*Note: replace MYUSER_PASS with suitable password*)
+
 To use resource file: `. <filename>`
 
 #### Install Image Service (Glance)
-(Installation script)
+
+##### Create glance database
+```bash
+$ mysql -u root -p
+MariaDB [(none)]> CREATE DATABASE glance;
+MariaDB [(none)]> GRANT ALL PRIVILEGES ON glance.* TO 'glance'@'localhost' \
+ IDENTIFIED BY 'GLANCE_DBPASS';
+MariaDB [(none)]> GRANT ALL PRIVILEGES ON glance.* TO 'glance'@'%' \
+ IDENTIFIED BY 'GLANCE_DBPASS';
+```
+
+
 #### Install Placement Service (Placement)
 (Installation script)
 #### Install Compute Service (Nova)
@@ -311,10 +323,10 @@ To use resource file: `. <filename>`
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODM3MjQ1MDcsLTEwMDk4ODA3MTQsMj
-c4NDU2MTQxLC05ODQ0MjA0NDksLTEwNjIwMzA4NTMsNDU3NDYw
-ODc1LC04OTA2OTI0MDksMTQ4ODk0MTAxLDU1NjgzNTk1MiwtOT
-UwMTgyMDY3LDIzODAzNzgwOCw2NzU3NTc1MzgsNTI5MzM4OTAz
-LC0yODI5Nzc0NDEsMTc1ODk2MTMwLDIwMjY0NDY4OTEsOTQwMD
-IwNzA0LC0zMzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbLTEzNjA4Njk3ODEsLTEwODM3MjQ1MDcsLT
+EwMDk4ODA3MTQsMjc4NDU2MTQxLC05ODQ0MjA0NDksLTEwNjIw
+MzA4NTMsNDU3NDYwODc1LC04OTA2OTI0MDksMTQ4ODk0MTAxLD
+U1NjgzNTk1MiwtOTUwMTgyMDY3LDIzODAzNzgwOCw2NzU3NTc1
+MzgsNTI5MzM4OTAzLC0yODI5Nzc0NDEsMTc1ODk2MTMwLDIwMj
+Y0NDY4OTEsOTQwMDIwNzA0LC0zMzI0NTUzNjNdfQ==
 -->
