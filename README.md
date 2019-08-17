@@ -84,7 +84,7 @@ Enable OpenStack extra repository for Stein release:
 ##### Install sql database for Controller node
 - `yum install mariadb mariadb-server python2-PyMySQL`
 - Create and edit **/etc/my.cnf.d/openstack.cnf**:
-```
+```y
 [mysqld]
 bind-address = 10.0.0.11
 
@@ -107,8 +107,9 @@ character-set-server = utf8
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5MDY5MjQwOSwxNDg4OTQxMDEsNTU2OD
-M1OTUyLC05NTAxODIwNjcsMjM4MDM3ODA4LDY3NTc1NzUzOCw1
-MjkzMzg5MDMsLTI4Mjk3NzQ0MSwxNzU4OTYxMzAsMjAyNjQ0Nj
-g5MSw5NDAwMjA3MDQsLTMzMjQ1NTM2M119
+eyJoaXN0b3J5IjpbLTE2MzE1NTY2MzYsLTg5MDY5MjQwOSwxND
+g4OTQxMDEsNTU2ODM1OTUyLC05NTAxODIwNjcsMjM4MDM3ODA4
+LDY3NTc1NzUzOCw1MjkzMzg5MDMsLTI4Mjk3NzQ0MSwxNzU4OT
+YxMzAsMjAyNjQ0Njg5MSw5NDAwMjA3MDQsLTMzMjQ1NTM2M119
+
 -->
