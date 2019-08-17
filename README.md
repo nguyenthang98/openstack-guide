@@ -2,12 +2,12 @@
 ## Abstract
 This document is based on official OpenStack installation and deployment guide.
 ## Install OpenStack
-#### System information
+### System information
 OS: CentOS 7
 RAM: 12GiB
 CPUS: 8 core
 DISK: 16GiB
-#### Architecture
+### Architecture
 We will install minimal deployment for Stein release of OpenStack with these services:
  - Identity service (Keystone)
  - Image service (Glance)
@@ -19,23 +19,23 @@ We also install front-end dashboard(Horizon) to launch new instance easier
 
 We will install OpenStack with following architecture
 
-#### Prerequisite
+### Prerequisite
  - The host machine already installed libvirt and bridge-utils
  - Basic understanding of virtual machine management with libvirt
  - Understanding linux bridge and how to use it
  - Feel comfortable when using linux commands ;-)
-#### Conventions
+### Conventions
  
 
-#### Setting up environment
-##### Install dependencies
+### Setting up environment
+#### Install dependencies
 - install libvirt and qemu with yum: `yum install libvirt qemu-kvm`
 - get CentOS cloud image at: [CentOS 7](http://cloud.centos.org/centos/7/images/)
-##### Create controller machine
+#### Create controller machine
 (create controller machine script)
-##### Setting up persistent network and ssh authentication
+#### Setting up persistent network and ssh authentication
 (networking script)
-##### Security
+#### Security
 You can chose any password you want. But i recommend you generate them using a tool such as [pwgen](https://sourceforge.net/projects/pwgen/)  or running the following command `openssl rand -hex 10` (*Note: Replace 10 by password length which comfort to you*);
 
 |Variable|Description|
@@ -57,7 +57,7 @@ You can chose any password you want. But i recommend you generate them using a t
 
 
 (*Note: Keep the password table for your self and do not share it to other*)
-##### Synchronize between services (NTP)
+#### Synchronize between services (NTP)
 As recommended by OpenStack Installation Guilde, we're going to install Chrony, an implementation of Network Time Protocol (NTP).
 
  - On controller-vm:
@@ -79,7 +79,7 @@ As recommended by OpenStack Installation Guilde, we're going to install Chrony, 
 		-	edit the **/etc/chrony.conf** file as follow:
 		`server controller iburst`
 		- restart the **chronyd** service
-##### Add OpenStack package repositories to yum
+#### Add OpenStack package repositories to yum
 Enable OpenStack extra repository for Stein release:
 ```bash
 yum install centos-release-openstack-stein
@@ -87,7 +87,7 @@ yum upgrade
 yum install python-openstackclient
 yum install openstack-selinux
 ```
-##### Install sql database for Controller node
+#### Install sql database for Controller node
 - `yum install mariadb mariadb-server python2-PyMySQL`
 - Create and edit **/etc/my.cnf.d/openstack.cnf**:
 	```ini
@@ -105,7 +105,7 @@ yum install openstack-selinux
 	systemctl start mariadb
 	```
 - After mysql database running, use `mysql_secure_installation` to secure your database.
-##### Install Message-queue
+#### Install Message-queue
 ```bash
 yum install rabbitmq-server
 systemctl enable rabbitmq-server.service
@@ -114,7 +114,7 @@ systemctl start rabbitmq-server.service
 Add openstack user
 `rabbitmqctl add_user openstack RABBIT_PASS` (*Note: replace **RABBIT_PASS** with the suitable password on the password table you created before*)
 `rabbitmqctl set_permissions openstack ".*" ".*" ".*"`
-##### Install Memcached
+#### Install Memcached
 `yum install memcached python-memcached`
 Edit the **/etc/sysconfig/memcached** file:
 `OPTIONS="-l 127.0.0.1,::1,controller"` (*Note: change the existing line `OPTIONS="-l 127.0.0.1,::1"`*)
@@ -123,7 +123,7 @@ Enable memcached on startup and start it:
 systemctl enable memcached.service
 systemctl start memcached.service
 ```
-##### Install Ectd (a distributed reliable key-value store)
+#### Install Ectd (a distributed reliable key-value store)
 `yum install etcd`
 Edit the **/etc/etcd/etcd.conf** file and set the `ETCD_INITIAL_CLUSTER`, `ETCD_INITIAL_ADVERTISE_PEER_URLS`, `ETCD_ADVERTISE_CLIENT_URLS`, `ETCD_LISTEN_CLIENT_URLS` to the management IP address of the controller node.
 ```ini
@@ -144,23 +144,23 @@ restart service
 systemctl enable etcd
 systemctl start etcd
 ```
-#### Install OpenStack services - Stein Release
-##### Install Identity Service (Keystone)
-###### Keyston
+### Install OpenStack services - Stein Release
+#### Install Identity Service (Keystone)
+##### Keystone
 
-##### Install Image Service (Glance)
+#### Install Image Service (Glance)
 (Installation script)
-##### Install Placement Service (Placement)
+#### Install Placement Service (Placement)
 (Installation script)
-##### Install Compute Service (Nova)
+#### Install Compute Service (Nova)
 (Nova Installation script)
-##### Install Networking Service (Neutron)
+#### Install Networking Service (Neutron)
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDM2MDgzNDIsLTk4NDQyMDQ0OSwtMT
-A2MjAzMDg1Myw0NTc0NjA4NzUsLTg5MDY5MjQwOSwxNDg4OTQx
-MDEsNTU2ODM1OTUyLC05NTAxODIwNjcsMjM4MDM3ODA4LDY3NT
-c1NzUzOCw1MjkzMzg5MDMsLTI4Mjk3NzQ0MSwxNzU4OTYxMzAs
-MjAyNjQ0Njg5MSw5NDAwMjA3MDQsLTMzMjQ1NTM2M119
+eyJoaXN0b3J5IjpbLTM4MTk1MDM4MywtOTg0NDIwNDQ5LC0xMD
+YyMDMwODUzLDQ1NzQ2MDg3NSwtODkwNjkyNDA5LDE0ODg5NDEw
+MSw1NTY4MzU5NTIsLTk1MDE4MjA2NywyMzgwMzc4MDgsNjc1Nz
+U3NTM4LDUyOTMzODkwMywtMjgyOTc3NDQxLDE3NTg5NjEzMCwy
+MDI2NDQ2ODkxLDk0MDAyMDcwNCwtMzMyNDU1MzYzXX0=
 -->
