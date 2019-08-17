@@ -156,9 +156,13 @@ MariaDB [(none)]> GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'localhost' \
 IDENTIFIED BY 'KEYSTONE_DBPASS';
 MariaDB [(none)]> GRANT ALL PRIVILEGES ON keystone.* TO 'keystone'@'%' \
 IDENTIFIED BY 'KEYSTONE_DBPASS';
-#####
  ```
  (*Note: replace KEYSTONE_DBPASS with suitable password in the password table you created before*)
+##### Install and configure components
+- Install packages:
+	`yum install openstack-keystone httpd mod_wsgi`
+- Edit the **/etc/keystone/keystone.conf** file:
+	- 
 #### Install Image Service (Glance)
 (Installation script)
 #### Install Placement Service (Placement)
@@ -169,9 +173,9 @@ IDENTIFIED BY 'KEYSTONE_DBPASS';
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDEzNjQ5MjcyLC05ODQ0MjA0NDksLTEwNj
-IwMzA4NTMsNDU3NDYwODc1LC04OTA2OTI0MDksMTQ4ODk0MTAx
-LDU1NjgzNTk1MiwtOTUwMTgyMDY3LDIzODAzNzgwOCw2NzU3NT
-c1MzgsNTI5MzM4OTAzLC0yODI5Nzc0NDEsMTc1ODk2MTMwLDIw
-MjY0NDY4OTEsOTQwMDIwNzA0LC0zMzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbMjE0MjU0OTcwNSwtOTg0NDIwNDQ5LC0xMD
+YyMDMwODUzLDQ1NzQ2MDg3NSwtODkwNjkyNDA5LDE0ODg5NDEw
+MSw1NTY4MzU5NTIsLTk1MDE4MjA2NywyMzgwMzc4MDgsNjc1Nz
+U3NTM4LDUyOTMzODkwMywtMjgyOTc3NDQxLDE3NTg5NjEzMCwy
+MDI2NDQ2ODkxLDk0MDAyMDcwNCwtMzMyNDU1MzYzXX0=
 -->
