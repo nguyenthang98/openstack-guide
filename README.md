@@ -515,15 +515,23 @@ openstack endpoint create --region RegionOne \
   placement admin http://controller:8778
 ```
 ##### Install and Configure Components
-
-
+- Install packages
+	```bash
+	yum install openstack-placement-api
+	```
+- Edit the **`/etc/placement/placement.conf`** file:
+```bash
+[placement_database]
+# ...
+connection = mysql+pymysql://placement:PLACEMENT_DBPASS@controller/placement
+```
 #### Install Compute Service (Nova)
 (Nova Installation script)
 #### Install Networking Service (Neutron)
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1ODMyNzUzMSwyMDc5OTI3ODkxLDQwNz
+eyJoaXN0b3J5IjpbLTEzNjg4MzgwOSwyMDc5OTI3ODkxLDQwNz
 Q1Mzg1OSwxMjY0NzI3MjQwLDEwMTk2NDQwODYsLTEzNjA4Njk3
 ODEsLTEwODM3MjQ1MDcsLTEwMDk4ODA3MTQsMjc4NDU2MTQxLC
 05ODQ0MjA0NDksLTEwNjIwMzA4NTMsNDU3NDYwODc1LC04OTA2
