@@ -59,7 +59,8 @@ You can chose any password you want. But i recommend you generate them using a t
 As recommended by OpenStack Installation Guilde, we're going to install Chrony, an implementation of Network Time Protocol (NTP).
 
  - On controller-vm:
- - On compute
+		 - # `yum install chrony`
+ - On compute-vm:
 
 #### Install OpenStack - Stein Release
 ##### Install Identity Service (Keystone)
@@ -74,7 +75,7 @@ As recommended by OpenStack Installation Guilde, we're going to install Chrony, 
 (Neutron installation script)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyNjI1MDYyOCwyMzgwMzc4MDgsNjc1Nz
+eyJoaXN0b3J5IjpbLTM2ODIwMjA1NywyMzgwMzc4MDgsNjc1Nz
 U3NTM4LDUyOTMzODkwMywtMjgyOTc3NDQxLDE3NTg5NjEzMCwy
 MDI2NDQ2ODkxLDk0MDAyMDcwNCwtMzMyNDU1MzYzXX0=
 -->
